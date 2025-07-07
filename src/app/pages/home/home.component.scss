@@ -1,52 +1,147 @@
+.home-comp {
+  padding: 0 10vw;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+/* Hero Section */
 .hero {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 4rem 10vw;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  min-height: 80vh;
+  padding-top: 4rem;
+  gap: 2rem;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 
   .hero-text {
+    flex: 1;
+
     h1 {
-      font-size: 2.5rem;
+      font-size: 3rem;
+      font-weight: 600;
       margin-bottom: 1rem;
+      line-height: 1.2;
+    }
+
+    .wave {
+      display: inline-block;
+      animation: wave 1.5s infinite;
+      transform-origin: 70% 70%;
     }
 
     p {
-      color: rgba(255, 255, 255, 0.7);
-      max-width: 500px;
+      font-size: 1.2rem;
+      color: var(--text-color);
+    }
+
+    .age-container {
+      position: relative;
+      display: inline-block;
+      cursor: help;
+      margin-right: 0.4rem;
+    }
+
+    .age-text {
+      border-bottom: 1px dashed gray;
+    }
+
+    .tooltip {
+      position: absolute;
+      top: 1.8rem;
+      left: 0;
+      background: rgba(0, 0, 0, 0.8);
+      color: white;
+      padding: 0.3rem 0.6rem;
+      font-size: 0.75rem;
+      border-radius: 6px;
+      white-space: nowrap;
+      z-index: 10;
+    }
+
+    .subheading {
+      margin-top: 1rem;
+      font-size: 1.3rem;
+      max-width: 600px;
+      color: var(--text-color);
     }
 
     button {
       margin-top: 1rem;
       padding: 0.6rem 1.2rem;
-      background-color: #ffffff10;
-      color: white;
-      border: 1px solid white;
+      background-color: rgba(255, 255, 255, 0.05);
+      color: var(--text-color);
+      border: 1px solid var(--text-color);
       border-radius: 6px;
       cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    button:hover {
+      background-color: rgba(255, 255, 255, 0.15);
     }
   }
 
-  .hero-image img {
-    max-width: 300px;
-    border-radius: 1rem;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  .hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+
+    img {
+      max-width: 300px;
+      width: 100%;
+      border-radius: 1rem;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    }
   }
 }
 
+/* Keyframe for waving hand */
+@keyframes wave {
+  0% { transform: rotate(0deg); }
+  10% { transform: rotate(14deg); }
+  20% { transform: rotate(-8deg); }
+  30% { transform: rotate(14deg); }
+  40% { transform: rotate(-4deg); }
+  50% { transform: rotate(10deg); }
+  60% { transform: rotate(0deg); }
+  100% { transform: rotate(0deg); }
+}
+
+/* Gradient Section */
 .colored-section {
-  padding: 4rem 10vw;
+  padding: 4rem 0;
   background: linear-gradient(to right, #ff8a00, #e52e71);
   color: white;
   text-align: center;
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
 }
 
+/* Image Grid */
 .image-grid {
-  padding: 4rem 10vw;
   display: flex;
+  flex-wrap: wrap;
   gap: 2rem;
   justify-content: center;
 
   img {
+    width: 100%;
+    max-width: 300px;
     border-radius: 8px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   }
