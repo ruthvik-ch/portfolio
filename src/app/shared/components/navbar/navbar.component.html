@@ -1,0 +1,18 @@
+
+<nav class="navbar layout-container">
+  <div class="nav-content">
+    <div class="left">
+      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">home</a>
+      <a routerLink="/projects" routerLinkActive="active">projects</a>
+      <a routerLink="/blog" routerLinkActive="active">blog</a>
+      <a routerLink="/contact" routerLinkActive="active">contact</a>
+    </div>
+
+    <div class="right">
+      <button class="icon-btn" (click)="toggleTheme()">
+        <ng-container *ngIf="themeService.current === 'light'; else darkIcon">🌙</ng-container>
+        <ng-template #darkIcon>☀️</ng-template>
+      </button>
+    </div>
+  </div>
+</nav>

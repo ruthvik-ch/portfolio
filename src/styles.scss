@@ -1,1 +1,72 @@
-/* You can add global styles to this file, and also import other style files */
+/* Global Styles - styles.scss */
+@import "tailwindcss";
+
+:root {
+  /* Color Palette */
+  --bg-color: #f6f6f6;
+  --text-color: #121212;
+  --text-bright-color: #121212;   
+  --text-hover-color: #1c1c1c;
+     
+  --navbar-bg: rgba(255, 255, 255, 0.8);
+
+  /* Typography */
+  --font-body: 'Rubik', sans-serif;
+  --font-heading: 'Pacifico', sans-serif;
+
+  /* Layout */
+  --section-padding: 25vw;
+  --section-padding-mobile: 5vw;
+}
+
+[data-theme='dark'] {
+  --bg-color: #020712;
+  --text-color: #b7b7b7;
+  --text-bright-color: #ffffff; 
+  --text-hover-color: rgba(255, 255, 255, 0.5);
+  --navbar-bg: rgba(30, 30, 30, 0.7);
+}
+
+/* 2. Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 100;
+  letter-spacing: 0.5px;
+  line-height: 1.6;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  scroll-behavior: smooth;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 3. Responsive Layout Padding */
+.layout-container {
+  padding-left: var(--section-padding);
+  padding-right: var(--section-padding);
+
+  @media (max-width: 1024px) {
+    padding-left: 8vw;
+    padding-right: 8vw;
+  }
+
+  @media (max-width: 640px) {
+    padding-left: var(--section-padding-mobile);
+    padding-right: var(--section-padding-mobile);
+  }
+}
+
+/* 4. Heading font (replace later) */
+h1, h2, h3 {
+  font-family: var(--font-heading);
+  letter-spacing: 0.8px;
+}
