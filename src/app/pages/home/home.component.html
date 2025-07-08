@@ -1,11 +1,13 @@
 <div class="home-comp layout-container">
   <section class="hero">
     <div class="hero-text">
-      <h1>
-        hi ruthvik here. <span class="wave">👋</span>
-      </h1>
+      <h1>hi ruthvik here. <span class="wave">👋</span></h1>
       <p>
-        <span class="age-container" (mouseenter)="onHoverStart()" (mouseleave)="onHoverEnd()">
+        <span
+          class="age-container"
+          (mouseenter)="onHoverStart()"
+          (mouseleave)="onHoverEnd()"
+        >
           <span class="age-text">{{ age }}yo</span>
           <span class="tooltip" *ngIf="isHovering">{{ fullAge }}</span>
         </span>
@@ -15,14 +17,49 @@
         Fullstack Engineer building minimal, responsive and elegant web
         experiences.
       </p>
-      <button>Explore More</button>
+
+      <!-- Contact/Resume Section -->
+      <div class="contact-links">
+        <a
+          class="resume-btn"
+          href="assets/resume.pdf"
+          target="_blank"
+          rel="noopener"
+        >
+          <span>Resume</span>
+          <i class="fa-solid fa-download"></i>
+        </a>
+
+        <div class="social-icons">
+          <a
+            href="https://linkedin.com/in/yourprofile"
+            target="_blank"
+            aria-label="LinkedIn"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a
+            href="https://github.com/yourusername"
+            target="_blank"
+            aria-label="GitHub"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="mailto:youremail@example.com" aria-label="Email">
+            <i class="fa-regular fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+      
     </div>
-    <div class="hero-image">
-      <img
-        src="https://source.unsplash.com/random/400x400?person"
-        alt="Random person image"
-      />
-    </div>
+
+      <div class="hero-image">
+        <img
+          src="https://preview.redd.it/3-4-profile-is-underrated-in-terms-of-beauty-v0-by9eco0hv1od1.jpg?width=640&crop=smart&auto=webp&s=d08f9b259525ab7ab2821ad6e6a1dca2a4b2e403"
+          alt="Random person image"
+        />
+      </div>
+
   </section>
 
   <section class="colored-section">

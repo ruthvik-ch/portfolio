@@ -1,29 +1,46 @@
 /* Global Styles - styles.scss */
-
+// color palette - https://coolors.co/palette/f8f9fa-e9ecef-dee2e6-ced4da-adb5bd-6c757d-495057-343a40-212529
 :root {
   /* Color Palette */
-  --bg-color: #f6f6f6;
-  --text-color: #121212;
-  --text-bright-color: #121212;   
-  --text-hover-color: #1c1c1c;
-     
-  --navbar-bg: rgba(255, 255, 255, 0.8);
+  /* Base (Light Theme) */
+  --gray-100: #F8F9FA;
+  --gray-200: #E9ECEF;
+  --gray-300: #DEE2E6;
+  --gray-400: #CED4DA;
+  --gray-500: #ADB5BD;
+  --gray-600: #6C757D;
+  --gray-700: #495057;
+  --gray-800: #343A40;
+  --gray-900: #020712;
 
-  /* Typography */
+  // Typography
   --font-body: 'Rubik', sans-serif;
   --font-heading: 'Pacifico', sans-serif;
 
-  /* Layout */
+  // Layout
   --section-padding: 25vw;
   --section-padding-mobile: 5vw;
-}
 
+  // light theme 
+  --bg-color: var(--gray-100);
+  --surface-color: var(--gray-200);
+  --text-color: var(--gray-900);
+  --text-active-color: var(--gray-600);
+  --text-muted-color: var(--gray-600);
+  --border-color: var(--gray-300);
+  --bg-color-translucent: rgba(248, 249, 250, 0.8); // Light = #F8F9FA @ 80%
+
+}
+// dark theme
 [data-theme='dark'] {
-  --bg-color: #020712;
-  --text-color: #b7b7b7;
-  --text-bright-color: #ffffff; 
-  --text-hover-color: rgba(255, 255, 255, 0.5);
-  --navbar-bg: rgba(30, 30, 30, 0.7);
+  --bg-color: var(--gray-900);
+  --surface-color: var(--gray-800);
+  --text-color: var(--gray-300);
+  --text-active-color: var(--gray-100);
+  --text-muted-color: var(--gray-500);
+  --border-color: var(--gray-700);
+  --bg-color-translucent: rgba(2, 7, 18, 0.8); // Dark = #020712 @ 80%
+
 }
 
 /* 2. Reset & Base */
@@ -36,7 +53,7 @@
 html, body {
   font-family: var(--font-body);
   font-size: 1rem;
-  font-weight: 100;
+  font-weight: 400;
   letter-spacing: 0.5px;
   line-height: 1.6;
   background-color: var(--bg-color);

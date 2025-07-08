@@ -1,5 +1,4 @@
 .home-comp {
-  padding: 0 10vw;
   display: flex;
   flex-direction: column;
   gap: 5rem;
@@ -11,8 +10,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  min-height: 80vh;
-  padding-top: 4rem;
+  min-height: 40vh;
   gap: 2rem;
 
   @media (min-width: 768px) {
@@ -22,13 +20,14 @@
   }
 
   .hero-text {
-    flex: 1;
+    flex: 1.5;
 
     h1 {
-      font-size: 3rem;
+      font-size: 3.5rem;
       font-weight: 600;
       margin-bottom: 1rem;
       line-height: 1.2;
+      color: var(--text-color);
     }
 
     .wave {
@@ -38,7 +37,7 @@
     }
 
     p {
-      font-size: 1.2rem;
+      font-size: 0.8rem;
       color: var(--text-color);
     }
 
@@ -57,46 +56,80 @@
       position: absolute;
       top: 1.8rem;
       left: 0;
-      background: rgba(0, 0, 0, 0.8);
-      color: white;
+      background: var(--bg-color-translucent);
+      color: var(--text-color);
       padding: 0.3rem 0.6rem;
       font-size: 0.75rem;
       border-radius: 6px;
       white-space: nowrap;
       z-index: 10;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
     }
 
     .subheading {
       margin-top: 1rem;
-      font-size: 1.3rem;
-      max-width: 600px;
+      font-size: 1rem;
+      max-width: 450px;
       color: var(--text-color);
     }
 
-    button {
-      margin-top: 1rem;
-      padding: 0.6rem 1.2rem;
-      background-color: rgba(255, 255, 255, 0.05);
-      color: var(--text-color);
-      border: 1px solid var(--text-color);
-      border-radius: 6px;
-      cursor: pointer;
-      transition: all 0.3s ease;
-    }
+    .contact-links {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      margin-top: 1.5rem;
 
-    button:hover {
-      background-color: rgba(255, 255, 255, 0.15);
+      .resume-btn {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.3rem 1.2rem;
+        font-weight: 400;
+        color: var(--text-color);
+        border: 1.2px solid var(--border-color);
+        border-radius: 6px;
+        background-color: transparent;
+        text-decoration: none;
+        transition: background-color 0.3s ease, color 0.3s ease,
+          border-color 0.3s ease;
+
+        &:hover {
+          background-color: var(--gray-800);
+          //color: var(--gray-900);
+          border: 1.4px solid var(--border-color);
+        }
+
+        i {
+          font-size: 1rem;
+        }
+      }
+
+      .social-icons {
+        display: flex;
+        align-items: center;
+        gap: 1.2rem;
+
+        a {
+          color: var(--text-color);
+          font-size: 1.25rem;
+          transition: color 0.3s ease;
+
+          &:hover {
+            color: var(--gray-400);
+          }
+        }
+      }
     }
   }
 
   .hero-image {
-    flex: 1;
+    flex: 0.5;
     display: flex;
     justify-content: center;
 
     img {
-      max-width: 300px;
-      width: 100%;
+      max-width: 180px;
       border-radius: 1rem;
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     }
@@ -105,14 +138,30 @@
 
 /* Keyframe for waving hand */
 @keyframes wave {
-  0% { transform: rotate(0deg); }
-  10% { transform: rotate(14deg); }
-  20% { transform: rotate(-8deg); }
-  30% { transform: rotate(14deg); }
-  40% { transform: rotate(-4deg); }
-  50% { transform: rotate(10deg); }
-  60% { transform: rotate(0deg); }
-  100% { transform: rotate(0deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 /* Gradient Section */
