@@ -54,12 +54,12 @@
 
     .tooltip {
       position: absolute;
-      top: 1.8rem;
+      top: -1.4rem;
       left: 0;
       background: var(--bg-color-translucent);
       color: var(--text-color);
-      padding: 0.3rem 0.6rem;
-      font-size: 0.75rem;
+      padding: 0.2rem 0.6rem;
+      font-size: 0.7rem;
       border-radius: 6px;
       white-space: nowrap;
       z-index: 10;
@@ -105,18 +105,32 @@
         }
       }
 
+      img.gif-icon {
+            height: 24px;
+            width: 24px;
+            object-fit: contain;
+          }
       .social-icons {
         display: flex;
         align-items: center;
         gap: 1.2rem;
 
         a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
           color: var(--text-color);
           font-size: 1.25rem;
           transition: color 0.3s ease;
 
           &:hover {
             color: var(--gray-400);
+          }
+
+          img.gif-icon {
+            height: 24px;
+            width: 24px;
+            object-fit: contain;
           }
         }
       }
