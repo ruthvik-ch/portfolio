@@ -1,0 +1,113 @@
+.work-edu-section {
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+
+  .tabs {
+    display: flex;
+    justify-content: center;
+    background-color: var(--gray-800);
+    padding: 0.2rem;
+    border-radius: 8px;
+    border-radius: var(--rad-mid);
+    margin: 0 auto 2rem auto;
+    border: 1.4px solid var(--gray-700);
+    overflow: hidden;
+    width: 100%;
+
+    .work {
+      flex: 1;
+    }
+    .edu {
+      flex: 1;
+    }
+
+    button {
+      all: unset;
+      cursor: pointer;
+      padding: 0.2rem 2.5rem;
+      color: var(--gray-500);
+      font-weight: 500;
+      font-size: 0.9rem;
+      transition: all 0.3s ease;
+      border-radius: var(--rad-min);
+      text-align: center;
+
+      &.active {
+        background-color: var(--gray-900);
+        color: var(--gray-400);
+      }
+    }
+  }
+
+  .timeline-outer {
+      border: 1.4px solid var(--gray-700);
+      border-radius: var(--rad-mid);
+      padding: 1rem 1rem 1rem 2rem;
+    .timeline {
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
+      border-left: 1.4px solid var(--gray-700);
+
+      .timeline-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 1rem;
+        position: relative;
+        margin-left: -1.26rem;
+
+        .logo {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          object-fit: cover;
+          background: black;
+          border: 2px solid var(--gray-700);
+        }
+
+        .content {
+          .duration {
+            font-size: 0.85rem;
+            color: var(--gray-500);
+          }
+
+          .company {
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: var(--gray-200);
+          }
+
+          .role {
+            color: var(--gray-500);
+            margin-bottom: 0.5rem;
+          }
+
+          ul {
+            padding-left: 1.2rem;
+            margin: 0;
+
+            li {
+              margin-bottom: 0.4rem;
+              color: var(--gray-300);
+            }
+          }
+
+          .badge {
+            display: inline-block;
+            margin-top: 0.5rem;
+            font-size: 0.75rem;
+            background: var(--gray-700);
+            color: white;
+            padding: 0.3rem 0.6rem;
+            border-radius: 5px;
+            text-decoration: none;
+
+            &:hover {
+              background: var(--gray-600);
+            }
+          }
+        }
+      }
+    }
+  }
+}

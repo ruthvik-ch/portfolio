@@ -1,10 +1,12 @@
 import { Component, OnDestroy } from '@angular/core';
-import { TimeService } from '../../../app/core/services/time.service';
+import { TimeService } from 'app/core/services/time.service';
 import { CommonModule } from '@angular/common';
+import { FeatProjectsComponent } from './feat-projects/feat-projects.component';
+import { WorkEduComponent } from './work-edu/work-edu.component';
 
 @Component({
   selector: 'app-home',
-  imports: [CommonModule],
+  imports: [CommonModule, WorkEduComponent, FeatProjectsComponent],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
   standalone: true,

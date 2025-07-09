@@ -1,7 +1,6 @@
 .home-comp {
   display: flex;
   flex-direction: column;
-  gap: 5rem;
 }
 
 /* Hero Section */
@@ -175,37 +174,5 @@
   }
   100% {
     transform: rotate(0deg);
-  }
-}
-
-/* Gradient Section */
-.colored-section {
-  padding: 4rem 0;
-  background: linear-gradient(to right, #ff8a00, #e52e71);
-  color: white;
-  text-align: center;
-
-  h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-
-  p {
-    font-size: 1.1rem;
-  }
-}
-
-/* Image Grid */
-.image-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: center;
-
-  img {
-    width: 100%;
-    max-width: 300px;
-    border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   }
 }

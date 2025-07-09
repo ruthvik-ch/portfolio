@@ -21,6 +21,11 @@
   --section-padding: 25vw;
   --section-padding-mobile: 5vw;
 
+  // For consistent border radius
+  --rad-min: 6px;
+  --rad-mid: 10px;
+  --rad-max: 20px;
+
   // light theme 
   --bg-color: var(--gray-100);
   --surface-color: var(--gray-200);
@@ -82,7 +87,7 @@ html, body {
 }
 
 /* 4. Heading font (replace later) */
-h1, h2, h3 {
+h1, h2 {
   font-family: var(--font-heading);
   letter-spacing: 0.8px;
 }

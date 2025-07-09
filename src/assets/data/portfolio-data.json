@@ -1,0 +1,24 @@
+{
+  "projects": [
+    {
+      "title": "TT4D",
+      "description": "A lottery analysis tool for generating smart ticket patterns.",
+      "image": "https://source.unsplash.com/400x250?lottery",
+      "tags": ["Website", "AI", "TS"]
+    },
+    {
+      "title": "TradingView Telegram Alerts",
+      "description": "Auto-delivers trading signals from TradingView to Telegram in real time.",
+      "image": "https://source.unsplash.com/400x250?finance",
+      "tags": ["Automation", "Python", "Telegram"]
+    },
+    {
+      "title": "Portfolio Site",
+      "description": "Minimal personal portfolio showcasing projects, resume and blogs.",
+      "image": "https://source.unsplash.com/400x250?code",
+      "tags": ["Angular", "Responsive", "SCSS"]
+    }
+  ],
+  "workExperience": [],
+  "education": []
+}
