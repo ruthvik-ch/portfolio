@@ -1,24 +1,126 @@
 {
-  "projects": [
+  "summary": "Innovative and results-driven Full Stack Developer with 2 years of experience in building scalable enterprise applications using Angular, .NET Core, and SQL Server. Proven ability to lead technical initiatives, mentor junior developers, and deliver impactful solutions. Adept in cloud migrations and automation.",
+  "skills": {
+    "frontend": ["Angular", "TypeScript", "HTML5", "CSS3", "Bootstrap"],
+    "backend": ["ASP.NET Core", "C#"],
+    "database": ["SQL Server (SSMS)", "T-SQL"],
+    "toolsCloud": ["Azure DevOps", "Git", "SonarQube", "Azure Key Vault"],
+    "other": ["REST APIs", "Agile Methodology", "Team Leadership", "Mentoring"]
+  },
+  "workExperience": [
     {
-      "title": "TT4D",
-      "description": "A lottery analysis tool for generating smart ticket patterns.",
-      "image": "https://source.unsplash.com/400x250?lottery",
-      "tags": ["Website", "AI", "TS"]
+      "company": "Chubb",
+      "role": "Software Engineer",
+      "duration": "Jul 2023 – Present",
+      "logo": "https://logo.clearbit.com/chubb.com",
+      "bullets": [
+        "Built and maintained enterprise-grade modules with Angular and .NET Core.",
+        "Developed Claims Watch, an award-winning POC with UI from scratch and backend data processing using Python.",
+        "Led Key Vault migration initiative, resolving critical security configurations.",
+        "Spearheaded Azure 1.9 to 2.0 migration, ensuring seamless cloud infrastructure upgrades.",
+        "Built a dashboard to replace QlikView overnight, significantly improving reporting performance.",
+        "Created an Admin module to automate prod access provisioning (replacing manual batch jobs).",
+        "Designed a Param Table Module to enable self-service for parameter updates, reducing dependency on deployments.",
+        "Implemented Bulk Uploads module for catalog management.",
+        "Received Gold Excellence Award (Q3 2024) for outstanding performance.",
+        "Mentored interns across teams to ramp them up on project workflows and best practices."
+      ]
     },
     {
-      "title": "TradingView Telegram Alerts",
-      "description": "Auto-delivers trading signals from TradingView to Telegram in real time.",
-      "image": "https://source.unsplash.com/400x250?finance",
-      "tags": ["Automation", "Python", "Telegram"]
+      "company": "Digi Bros",
+      "role": "Full Stack Developer Intern",
+      "duration": "Jan 2022 – Mar 2022",
+      "logo": "https://img.logo.dev/google.com?token=pk_BoCjPfbiTCa0GKmNSuKZQw/",
+      "bullets": [
+        "Built an invoicing system with inventory management using PHP, JS, MySQL, and Bootstrap.",
+        "Integrated High Charts API for dynamic sales and inventory dashboards."
+      ]
     },
     {
-      "title": "Portfolio Site",
-      "description": "Minimal personal portfolio showcasing projects, resume and blogs.",
-      "image": "https://source.unsplash.com/400x250?code",
-      "tags": ["Angular", "Responsive", "SCSS"]
+      "company": "UTest (Remote)",
+      "role": "Software Tester",
+      "duration": "Apr 2021 – May 2021",
+      "logo": "https://logo.clearbit.com/utest.com",
+      "bullets": [
+        "Executed test cases on early-access platforms, submitted structured bug reports."
+      ]
     }
   ],
-  "workExperience": [],
-  "education": []
+  "education": [
+    {
+      "institution": "Kakatiya Institute of Technology & Science",
+      "role": "B.Tech in Computer Science and Engineering (Networks)",
+      "duration": "2019 – 2023",
+      "logo": "https://logo.clearbit.com/kitsw.ac.in",
+      "bullets": ["CGPA: 7.47"]
+    },
+    {
+      "institution": "Narayana Junior College",
+      "role": "Intermediate – MPC",
+      "duration": "2017 – 2019",
+      "logo": "https://logo.clearbit.com/narayanagroup.com",
+      "bullets": ["Score: 863/1000"]
+    },
+    {
+      "institution": "Sathupally Vidhyalayam",
+      "role": "SSC",
+      "duration": "2016 – 2017",
+      "logo": "https://logo.clearbit.com/sathupallyvidhyalayam.in",
+      "bullets": ["GPA: 9.2"]
+    }
+  ],
+  "featuredProjects": [
+    {
+      "title": "App Space",
+      "description": "App Downloader for mobile. Developed and hosted an App Downloader platform.",
+      "image": "assets/images/appstore.jpg",
+      "tags": ["PHP", "SQL", "DBMS", "Bootstrap"]
+    },
+    {
+      "title": "Fire Flixer",
+      "description": "An entertainment Website. Developed and hosted a user friendly, fully functional entertainment website.",
+      "image": "assets/images/appstore.jpg",
+      "tags": ["JavaScript", "TMDB API"]
+    },
+    {
+      "title": "Shoe Mart",
+      "description": "An ecommerce website for shoes. Integrated payment (Razorpay) and shipping (Shiprocket) APIs.",
+      "image": "assets/images/appstore.jpg",
+      "tags": ["RazorPay API", "Shiprocket API", "PHP", "MySQL"]
+    },
+    {
+      "title": "Invoicing Software for DigiBros",
+      "description": "Invoicing and inventory management software with expense tracking.",
+      "image": "assets/images/appstore.jpg",
+      "tags": ["PHP", "MySQL", "Bootstrap"]
+    },
+    {
+      "title": "Chrome Box",
+      "description": "A Chrome Extension for bookmarking and basic productivity tasks.",
+      "image": "assets/images/appstore.jpg",
+      "tags": ["JavaScript"]
+    },
+    {
+      "title": "Black Jack",
+      "description": "Basic interactive card game using JavaScript.",
+      "image": "assets/images/appstore.jpg",
+      "tags": ["HTML", "CSS", "JavaScript"]
+    }
+  ],
+  "achievements": [
+    "Gold Excellence Award – Q3 2024 (Chubb)",
+    "Led multiple mission-critical migrations and automation projects",
+    "Recognized for team mentoring and internal collaboration"
+  ],
+  "contact": {
+    "name": "Ruthvik Chennapragada",
+    "email": "chennapragadaruthvik@gmail.com",
+    "phone": "+91-9347813778",
+    "location": "Hyderabad, India"
+  },
+  "links": {
+    "linkedin": "https://www.linkedin.com/in/ruthvik-ch/",
+    "github": "https://github.com/ruthvik-ch",
+    "portfolio": "https://ruthvik-ch.github.io/portfolio/"
+  }
 }

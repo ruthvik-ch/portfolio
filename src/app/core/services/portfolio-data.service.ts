@@ -2,14 +2,21 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { map, Observable } from 'rxjs';
 
-import { Project } from '../models/project.model';
-import { WorkItem } from '../models/work.model';
-import { EducationItem } from '../models/education.model';
+import {
+  Project,
+  WorkExperience,
+  Education,
+  Links,
+  Contact,
+} from '../models/portfolio.model';
 
 interface PortfolioData {
+  featuredProjects: Project[];
+  workExperience: WorkExperience[];
+  education: Education[];
   projects: Project[];
-  workExperience: WorkItem[];
-  education: EducationItem[];
+  links: Links;
+  contact: Contact;
 }
 
 @Injectable({
@@ -25,14 +32,22 @@ export class PortfolioDataService {
   }
 
   getFeaturedProjects(): Observable<Project[]> {
-    return this.getPortfolioData().pipe(map((data) => data.projects));
+    return this.getPortfolioData().pipe(map((data) => data.featuredProjects));
   }
 
-  getWorkExperience(): Observable<WorkItem[]> {
+  getWorkExperience(): Observable<WorkExperience[]> {
     return this.getPortfolioData().pipe(map((data) => data.workExperience));
   }
 
-  getEducation(): Observable<EducationItem[]> {
+  getEducation(): Observable<Education[]> {
     return this.getPortfolioData().pipe(map((data) => data.education));
+  }
+
+  getLinks(): Observable<Links> {
+    return this.getPortfolioData().pipe(map((data) => data.links));
+  }
+
+  getContact(): Observable<Contact> {
+    return this.getPortfolioData().pipe(map((data) => data.contact));
   }
 }

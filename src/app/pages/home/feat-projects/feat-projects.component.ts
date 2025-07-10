@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { Project } from '../../../shared/models/project.model';
-import { PortfolioDataService } from '../../../shared/services/portfolio-data.service';
+import { Project } from 'app/core/models/portfolio.model';
+import { PortfolioDataService } from 'app/core/services/portfolio-data.service';
 
 @Component({
   selector: 'app-feat-projects',

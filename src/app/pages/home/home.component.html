@@ -36,30 +36,30 @@
 
         <div class="social-icons">
           <a
-            href="https://linkedin.com/in/yourprofile"
+            *ngIf="links?.linkedin" [href]="links.linkedin"
             target="_blank"
             aria-label="LinkedIn"
           >
             <img
-              src="https://lh3.googleusercontent.com/a/ACg8ocKeg8d1pl_Ho7Qr-MXw24E3RZRaPO8cloAq4FJ05yRr-EVFQek=s192-c-rg-br100"
+              src="assets/images/linkedin.png"
               alt="LinkedIn"
               class="gif-icon"
             />
           </a>
           <a
-            href="https://github.com/yourusername"
+            *ngIf="links?.github" [href]="links.github" 
             target="_blank"
             aria-label="GitHub"
           >
             <img
-              src="https://lh3.googleusercontent.com/a/ACg8ocKeg8d1pl_Ho7Qr-MXw24E3RZRaPO8cloAq4FJ05yRr-EVFQek=s192-c-rg-br100"
+              src="assets/images/github.png"
               alt="LinkedIn"
               class="gif-icon"
             />
           </a>
-          <a href="mailto:youremail@example.com" aria-label="Email">
+          <a *ngIf="contact?.email" [href]="'mailto:' + contact.email" aria-label="Email">
             <img
-              src="https://lh3.googleusercontent.com/a/ACg8ocKeg8d1pl_Ho7Qr-MXw24E3RZRaPO8cloAq4FJ05yRr-EVFQek=s192-c-rg-br100"
+              src="assets/images/email.png"
               alt="LinkedIn"
               class="gif-icon"
             />
@@ -70,7 +70,7 @@
 
     <div class="hero-image">
       <img
-        src="https://preview.redd.it/3-4-profile-is-underrated-in-terms-of-beauty-v0-by9eco0hv1od1.jpg?width=640&crop=smart&auto=webp&s=d08f9b259525ab7ab2821ad6e6a1dca2a4b2e403"
+        src="assets/images/rktemp.jpg"
         alt="Random person image"
       />
     </div>

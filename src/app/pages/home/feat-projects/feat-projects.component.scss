@@ -26,16 +26,16 @@
 .projects-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem; // Ensures both horizontal and vertical spacing are the same
+  gap: 1.4rem; // Ensures both horizontal and vertical spacing are the same
   margin-top: 2rem;
-  justify-content: flex-start;
+  justify-content: space-between;
 
   .project-card {
     background: var(--bg-translucent);
     border: 1px solid var(--gray-700);
     border-radius: 10px;
     overflow: hidden;
-    width: 300px; // Optional: adjust width if needed for better wrapping
+    width: 340px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 
     &:hover {

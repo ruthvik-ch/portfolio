@@ -1,8 +1,10 @@
-import { Component, OnDestroy } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { TimeService } from 'app/core/services/time.service';
 import { CommonModule } from '@angular/common';
 import { FeatProjectsComponent } from './feat-projects/feat-projects.component';
 import { WorkEduComponent } from './work-edu/work-edu.component';
+import { Contact, Links } from 'app/core/models/portfolio.model';
+import { PortfolioDataService } from 'app/core/services/portfolio-data.service';
 
 @Component({
   selector: 'app-home',
@@ -11,14 +13,27 @@ import { WorkEduComponent } from './work-edu/work-edu.component';
   styleUrls: ['./home.component.scss'],
   standalone: true,
 })
-export class HomeComponent implements OnDestroy {
+export class HomeComponent implements OnDestroy, OnInit {
   age: number;
   fullAge: string = '';
   isHovering: boolean = false;
   private timerId: any;
 
-  constructor(private timeService: TimeService) {
+  links!: Links;
+  contact!: Contact;
+
+  constructor(
+    private timeService: TimeService,
+    private portfolioService: PortfolioDataService
+  ) {
     this.age = this.timeService.getAge();
+  }
+
+  ngOnInit(): void {
+    this.portfolioService.getLinks().subscribe((data) => (this.links = data));
+    this.portfolioService
+      .getContact()
+      .subscribe((data) => (this.contact = data));
   }
 
   onHoverStart() {

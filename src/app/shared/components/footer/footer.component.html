@@ -16,7 +16,7 @@
     </a> -->
     <div class="social-icons">
       <a
-        href="https://linkedin.com/in/yourprofile"
+        *ngIf="links?.linkedin" [href]="links.linkedin"
         target="_blank"
         aria-label="LinkedIn"
       >
@@ -27,7 +27,7 @@
         />
       </a>
       <a
-        href="https://github.com/yourusername"
+        *ngIf="links?.github" [href]="links.github" 
         target="_blank"
         aria-label="GitHub"
       >
@@ -37,7 +37,7 @@
           class="gif-icon"
         />
       </a>
-      <a href="mailto:youremail@example.com" aria-label="Email">
+      <a *ngIf="contact?.email" [href]="'mailto:' + contact.email" aria-label="Email">
         <img
           src="https://lh3.googleusercontent.com/a/ACg8ocKeg8d1pl_Ho7Qr-MXw24E3RZRaPO8cloAq4FJ05yRr-EVFQek=s192-c-rg-br100"
           alt="LinkedIn"
