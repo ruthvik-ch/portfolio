@@ -1,0 +1,32 @@
+.lost-image {
+  display: flex;
+  justify-content: center;
+  .lost-image-svg {
+    display: flex;
+    justify-content: center;
+    max-height: 48vh;
+  }
+}
+
+.lost-text {
+  display: flex;
+  justify-content: center;
+  .lost-text-data {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    h1{
+        font-size: 4rem;
+    }
+    p{
+        font-size: .8rem;
+        padding: 1rem;
+    }
+    a{
+        font-size: 1.2rem;
+        color: var(--text-color);
+        text-decoration: none;
+    }
+  }
+}
