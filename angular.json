@@ -21,6 +21,7 @@
         "build": {
           "builder": "@angular/build:application",
           "options": {
+            "outputPath": "dist/portfolio",
             "browser": "src/main.ts",
             "polyfills": [
               "zone.js"
