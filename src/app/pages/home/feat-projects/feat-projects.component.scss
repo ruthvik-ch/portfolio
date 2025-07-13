@@ -79,3 +79,40 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .featured-projects-comp {
+    justify-content: center;
+    .section-header {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+
+      h2 {
+        font-size: 1.2rem;
+      }
+
+      .view-more {
+        font-size: 0.9rem;
+        color: var(--text-muted-color);
+        text-decoration: none;
+        transition: color 0.3s;
+
+        &:hover {
+          text-decoration: underline;
+          color: var(--text-active-color);
+        }
+      }
+    }
+
+    .projects-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.4rem; // Ensures both horizontal and vertical spacing are the same
+      margin-top: 2rem;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
