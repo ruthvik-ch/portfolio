@@ -1,41 +1,41 @@
-<section class="work-edu-section">
-  <div class="tabs">
-    <button class="work" [class.active]="activeTab === 'work'" (click)="activeTab = 'work'">Work</button>
-    <button class="edu" [class.active]="activeTab === 'education'" (click)="activeTab = 'education'">Education</button>
-  </div>
+  <section class="work-edu-section">
+    <div class="tabs">
+      <button class="work" [class.active]="activeTab === 'work'" (click)="activeTab = 'work'">Work</button>
+      <button class="edu" [class.active]="activeTab === 'education'" (click)="activeTab = 'education'">Education</button>
+    </div>
 
-  <div class="timeline-outer">
-  <div class="timeline">
-    <ng-container *ngIf="activeTab === 'work'">
-      <div class="timeline-item" *ngFor="let job of workExperience">
-        <img class="logo" [src]="job.logo" alt="logo" />
-        <div class="content">
-          <div class="duration">{{ job.duration }}</div>
-          <h3 class="company">{{ job.company }}</h3>
-          <div class="role">{{ job.role }}</div>
-          <ul>
-            <li *ngFor="let point of job.bullets">{{ point }}</li>
-          </ul>
-          <a *ngIf="job.link" class="badge" [href]="job.link.url" target="_blank">
-            🌐 {{ job.link.label }}
-          </a>
+    <div class="timeline-outer">
+    <div class="timeline">
+      <ng-container *ngIf="activeTab === 'work'">
+        <div class="timeline-item" *ngFor="let job of workExperience">
+          <img class="logo" [src]="job.logo" alt="logo" />
+          <div class="content">
+            <div class="duration">{{ job.duration }}</div>
+            <h3 class="company">{{ job.company }}</h3>
+            <div class="role">{{ job.role }}</div>
+            <ul>
+              <li *ngFor="let point of job.bullets">{{ point }}</li>
+            </ul>
+            <a *ngIf="job.link" class="badge" [href]="job.link.url" target="_blank">
+              🌐 {{ job.link.label }}
+            </a>
+          </div>
         </div>
-      </div>
-    </ng-container>
+      </ng-container>
 
-    <ng-container *ngIf="activeTab === 'education'">
-      <div class="timeline-item" *ngFor="let edu of education">
-        <img class="logo" [src]="edu.logo" alt="logo" />
-        <div class="content">
-          <div class="duration">{{ edu.duration }}</div>
-          <h3 class="company">{{ edu.institution }}</h3>
-          <div class="role">{{ edu.role }}</div>
-          <ul>
-            <li *ngFor="let point of edu.bullets">{{ point }}</li>
-          </ul>
+      <ng-container *ngIf="activeTab === 'education'">
+        <div class="timeline-item" *ngFor="let edu of education">
+          <img class="logo" [src]="edu.logo" alt="logo" />
+          <div class="content">
+            <div class="duration">{{ edu.duration }}</div>
+            <h3 class="company">{{ edu.institution }}</h3>
+            <div class="role">{{ edu.role }}</div>
+            <ul>
+              <li *ngFor="let point of edu.bullets">{{ point }}</li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </ng-container>
-  </div>
-  </div>
-</section>
+      </ng-container>
+    </div>
+    </div>
+  </section>

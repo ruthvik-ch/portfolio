@@ -1,17 +1,25 @@
-
 <nav class="navbar layout-container">
   <div class="nav-content">
-    <div class="left">
+    <!-- Hamburger Icon -->
+    <button class="hamburger" (click)="menuOpen = !menuOpen">
+      <span [class.open]="menuOpen"></span>
+    </button>
+
+    <div class="left" [class.show]="menuOpen">
       <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">home</a>
       <a routerLink="/experiences" routerLinkActive="active">experiences</a>
       <a routerLink="/projects" routerLinkActive="active">projects</a>
       <a routerLink="/contact" routerLinkActive="active">contact</a>
     </div>
 
-    <div class="right">
+    <div class="right" [class.show]="menuOpen">
       <button class="icon-btn" (click)="toggleTheme()">
-        <ng-container *ngIf="themeService.current === 'light'; else darkIcon"> <img src="assets/images/ss-moon-100.png" alt="lightMode"> </ng-container>
-        <ng-template #darkIcon> <img src="assets/images/ss-sun-100.png" alt="lightMode"> </ng-template>
+        <ng-container *ngIf="themeService.current === 'light'; else darkIcon">
+          <img src="assets/images/ss-moon-100.png" alt="lightMode">
+        </ng-container>
+        <ng-template #darkIcon>
+          <img src="assets/images/ss-sun-100.png" alt="darkMode">
+        </ng-template>
       </button>
     </div>
   </div>
