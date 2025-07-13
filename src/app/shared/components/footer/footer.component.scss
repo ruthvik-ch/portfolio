@@ -27,23 +27,31 @@
   }
 
   .footer-right {
+
+    .social-icons {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+
+  a {
     display: flex;
-    gap: 1.2rem;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+    font-size: 1.25rem;
+    transition: color 0.3s ease;
 
-    a {
+    &:hover {
       color: var(--text-color);
-      font-size: 1.1rem;
-
-      &:hover {
-        color: var(--text-color);
-      }
-
-      img.gif-icon {
-        height: 30px;
-        width: 30px;
-        object-fit: contain;
-      }
     }
+
+    img.gif-icon {
+      height: 28px;
+      width: 28px;
+      object-fit: contain;
+    }
+  }
+}
   }
 
   @media (max-width: 768px) {
@@ -56,27 +64,44 @@
     }
   }
 }
-      .social-icons {
-        display: flex;
-        align-items: center;
-        gap: 1.2rem;
 
-        a {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          color: var(--text-color);
-          font-size: 1.25rem;
-          transition: color 0.3s ease;
+.tooltip-wrapper {
+  position: relative;
+  display: inline-block;
 
-          &:hover {
-            color: var(--text-color);
-          }
+  .custom-tooltip {
+    visibility: hidden;
+    background-color: var(--bg-color-translucent);
+    color: var(--text-color);
+    text-align: center;
+    border-radius: var(--rad-min);
+    padding: 0.4rem 0.6rem;
+    font-size: 0.7rem;
+    position: absolute;
+    bottom: 125%; // Above the icon
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 99;
 
-          img.gif-icon {
-            height: 24px;
-            width: 24px;
-            object-fit: contain;
-          }
-        }
-      }
+    // Optional arrow
+    &::after {
+      content: "";
+      position: absolute;
+      top: 100%; // Arrow below the tooltip
+      left: 50%;
+      transform: translateX(-50%);
+      border-width: 5px;
+      border-style: solid;
+      border-color: var(--bg-color-translucent) transparent transparent
+        transparent;
+    }
+  }
+
+  &:hover .custom-tooltip {
+    visibility: visible;
+    opacity: 1;
+  }
+}
