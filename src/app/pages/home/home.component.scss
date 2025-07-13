@@ -97,11 +97,15 @@
         text-decoration: none;
         transition: background-color 0.3s ease, color 0.3s ease,
           border-color 0.3s ease;
-
+        img.gif-icon-resume{
+          height: 30px;
+          width: 30px;
+        }
         &:hover {
           background-color: var(--surface-color);
           border-color: var(--border-color);
         }
+
       }
 
       img.gif-icon {
