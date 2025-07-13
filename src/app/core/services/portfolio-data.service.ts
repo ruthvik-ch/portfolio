@@ -28,11 +28,25 @@ interface PortfolioData {
 })
 export class PortfolioDataService {
   private dataUrl = 'assets/data/portfolio-data.json';
-
+  private cachedData?: PortfolioData;
   constructor(private http: HttpClient) {}
 
   getPortfolioData(): Observable<PortfolioData> {
-    return this.http.get<PortfolioData>(this.dataUrl);
+    if (this.cachedData) {
+      // If cached, return as observable
+      return new Observable((observer) => {
+        observer.next(this.cachedData!);
+        observer.complete();
+      });
+    }
+
+    // Else fetch from file and cache it
+    return this.http.get<PortfolioData>(this.dataUrl).pipe(
+      map((data) => {
+        this.cachedData = data;
+        return data;
+      })
+    );
   }
 
   getFeaturedProjects(): Observable<Project[]> {
