@@ -23,6 +23,7 @@ export class HomeComponent implements OnDestroy, OnInit {
   contact!: Contact;
   icons!: Icons;
   resumeLink!: string;
+  summary!: string;
 
   constructor(
     private timeService: TimeService,
@@ -37,6 +38,10 @@ export class HomeComponent implements OnDestroy, OnInit {
       .subscribe((data) => (this.resumeLink = data));
     this.portfolioService.getIcons().subscribe((data) => (this.icons = data));
     this.portfolioService.getLinks().subscribe((data) => (this.links = data));
+    this.portfolioService
+      .getSummary()
+      .subscribe((data) => (this.summary = data));
+
     this.portfolioService
       .getContact()
       .subscribe((data) => (this.contact = data));

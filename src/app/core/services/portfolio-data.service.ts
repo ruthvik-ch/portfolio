@@ -20,6 +20,7 @@ interface PortfolioData {
   contact: Contact;
   icons: Icons;
   resume: string;
+  summary: string;
 }
 
 @Injectable({
@@ -60,5 +61,9 @@ export class PortfolioDataService {
 
   getResume(): Observable<string> {
     return this.getPortfolioData().pipe(map((data) => data.resume));
+  }
+
+  getSummary(): Observable<string> {
+    return this.getPortfolioData().pipe(map((data) => data.summary));
   }
 }

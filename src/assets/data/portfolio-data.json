@@ -1,5 +1,7 @@
 {
-  "summary": "Innovative and results-driven Full Stack Developer with 2 years of experience in building scalable enterprise applications using Angular, .NET Core, and SQL Server. Proven ability to lead technical initiatives, mentor junior developers, and deliver impactful solutions. Adept in cloud migrations and automation.",
+  "summaryLarge": "Full Stack Developer with 2 years of experience in Angular, .NET, and Azure. Skilled at navigating complex challenges, leading migrations, mentoring freshers, and delivering reliable, efficient solutions under tight timelines.",
+
+  "summary": "Full Stack Developer with expertise in Angular, .NET, and Azure. Known for delivering scalable enterprise-grade solutions and leading migrations under tight deadlines.",
   "skills": {
     "frontend": ["Angular", "TypeScript", "HTML5", "CSS3", "Bootstrap"],
     "backend": ["ASP.NET Core", "C#"],
