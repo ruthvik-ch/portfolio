@@ -3,7 +3,7 @@ import { TimeService } from 'app/core/services/time.service';
 import { CommonModule } from '@angular/common';
 import { FeatProjectsComponent } from './feat-projects/feat-projects.component';
 import { WorkEduComponent } from './work-edu/work-edu.component';
-import { Contact, Links } from 'app/core/models/portfolio.model';
+import { Contact, Icons, Links } from 'app/core/models/portfolio.model';
 import { PortfolioDataService } from 'app/core/services/portfolio-data.service';
 
 @Component({
@@ -21,6 +21,8 @@ export class HomeComponent implements OnDestroy, OnInit {
 
   links!: Links;
   contact!: Contact;
+  icons!: Icons;
+  resumeLink!: string;
 
   constructor(
     private timeService: TimeService,
@@ -30,6 +32,10 @@ export class HomeComponent implements OnDestroy, OnInit {
   }
 
   ngOnInit(): void {
+    this.portfolioService
+      .getResume()
+      .subscribe((data) => (this.resumeLink = data));
+    this.portfolioService.getIcons().subscribe((data) => (this.icons = data));
     this.portfolioService.getLinks().subscribe((data) => (this.links = data));
     this.portfolioService
       .getContact()

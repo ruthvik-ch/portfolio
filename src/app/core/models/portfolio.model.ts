@@ -38,3 +38,11 @@ export interface Contact {
   phone: string;
   location: string;
 }
+
+export interface Icons {
+  linkedIn: string;
+  github: string;
+  portfolio: string;
+  pdf: string;
+  email: string;
+}

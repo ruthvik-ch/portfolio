@@ -47,5 +47,16 @@
     font-size: 1.2rem;
     cursor: pointer;
     color: var(--text-color);
+    img{
+      width: 24px;
+      height: 24px;
+      object-fit: contain;
+      filter: grayscale(30%);
+      transition: filter 0.3s ease;
+
+      &:hover {
+        filter: grayscale(0%);
+      }
+    }
   }
 }

@@ -10,8 +10,8 @@
 
     <div class="right">
       <button class="icon-btn" (click)="toggleTheme()">
-        <ng-container *ngIf="themeService.current === 'light'; else darkIcon">🌙</ng-container>
-        <ng-template #darkIcon>☀️</ng-template>
+        <ng-container *ngIf="themeService.current === 'light'; else darkIcon"> <img src="assets/images/ss-moon-100.png" alt="lightMode"> </ng-container>
+        <ng-template #darkIcon> <img src="assets/images/ss-sun-100.png" alt="lightMode"> </ng-template>
       </button>
     </div>
   </div>

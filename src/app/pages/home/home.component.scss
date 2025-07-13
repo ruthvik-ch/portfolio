@@ -26,7 +26,8 @@
       font-weight: 600;
       margin-bottom: 1rem;
       line-height: 1.2;
-      color: var(--text-color);
+      color: var(--text-active-color);
+      transition: color 0.3s ease;
     }
 
     .wave {
@@ -38,6 +39,7 @@
     p {
       font-size: 0.8rem;
       color: var(--text-color);
+      transition: color 0.3s ease;
     }
 
     .age-container {
@@ -48,7 +50,8 @@
     }
 
     .age-text {
-      border-bottom: 1px dashed gray;
+      border-bottom: 1px dashed var(--text-muted-color);
+      transition: border-color 0.3s ease;
     }
 
     .tooltip {
@@ -64,13 +67,15 @@
       z-index: 10;
       backdrop-filter: blur(12px);
       -webkit-backdrop-filter: blur(12px);
+      transition: background-color 0.3s ease, color 0.3s ease;
     }
 
     .subheading {
       margin-top: 1rem;
       font-size: 1rem;
       max-width: 450px;
-      color: var(--text-color);
+      color: var(--text-muted-color);
+      transition: color 0.3s ease;
     }
 
     .contact-links {
@@ -94,21 +99,23 @@
           border-color 0.3s ease;
 
         &:hover {
-          background-color: var(--gray-800);
-          //color: var(--gray-900);
-          border: 1.4px solid var(--border-color);
-        }
-
-        i {
-          font-size: 1rem;
+          background-color: var(--surface-color);
+          border-color: var(--border-color);
         }
       }
 
       img.gif-icon {
-            height: 24px;
-            width: 24px;
-            object-fit: contain;
-          }
+        height: 36px;
+        width: 36px;
+        object-fit: contain;
+        filter: grayscale(30%);
+        transition: filter 0.3s ease;
+
+        &:hover {
+          filter: grayscale(0%);
+        }
+      }
+
       .social-icons {
         display: flex;
         align-items: center;
@@ -123,13 +130,19 @@
           transition: color 0.3s ease;
 
           &:hover {
-            color: var(--gray-400);
+            color: var(--text-muted-color);
           }
 
           img.gif-icon {
-            height: 24px;
-            width: 24px;
+            height: 36px;
+            width: 36px;
             object-fit: contain;
+            filter: grayscale(30%);
+            transition: filter 0.3s ease;
+
+            &:hover {
+              filter: grayscale(0%);
+            }
           }
         }
       }
@@ -143,7 +156,7 @@
 
     img {
       max-width: 180px;
-      border-radius: 1rem;
+      border-radius: var(--rad-mid);
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     }
   }

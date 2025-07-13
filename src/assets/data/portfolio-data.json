@@ -3,34 +3,42 @@
   "skills": {
     "frontend": ["Angular", "TypeScript", "HTML5", "CSS3", "Bootstrap"],
     "backend": ["ASP.NET Core", "C#"],
-    "database": ["SQL Server (SSMS)", "T-SQL"],
+    "database": ["SQL Server (SSMS)", "MySQL"],
     "toolsCloud": ["Azure DevOps", "Git", "SonarQube", "Azure Key Vault"],
     "other": ["REST APIs", "Agile Methodology", "Team Leadership", "Mentoring"]
   },
   "workExperience": [
     {
       "company": "Chubb",
-      "role": "Software Engineer",
+      "role": "Software Developer",
       "duration": "Jul 2023 – Present",
       "logo": "https://logo.clearbit.com/chubb.com",
       "bullets": [
-        "Built and maintained enterprise-grade modules with Angular and .NET Core.",
-        "Developed Claims Watch, an award-winning POC with UI from scratch and backend data processing using Python.",
-        "Led Key Vault migration initiative, resolving critical security configurations.",
-        "Spearheaded Azure 1.9 to 2.0 migration, ensuring seamless cloud infrastructure upgrades.",
-        "Built a dashboard to replace QlikView overnight, significantly improving reporting performance.",
-        "Created an Admin module to automate prod access provisioning (replacing manual batch jobs).",
-        "Designed a Param Table Module to enable self-service for parameter updates, reducing dependency on deployments.",
-        "Implemented Bulk Uploads module for catalog management.",
-        "Received Gold Excellence Award (Q3 2024) for outstanding performance.",
-        "Mentored interns across teams to ramp them up on project workflows and best practices."
+        "Played a pivotal role in delivering an award-winning POC – Claims Watch (SRE WATCH), collaborating across roles to build an intuitive UI and backend integration that enabled real-time insights into application reliability and system performance.",
+        "Led Azure Key Vault migration and addressed critical SonarQube issues to improve code quality and security across services.",
+        "Contributed to the upgrade of multiple applications from Azure v1.9 to v2.0, supporting smoother CI/CD transitions and improved deployment workflows.",
+        "Developed a self-service tool that enabled business teams to manage key config values independently, reducing deployment cycles and developer overhead.",
+        "Implemented bulk upload functionality for use cases like user-roles and relations mapping, allowing business teams to execute large-scale operations efficiently via Excel templates.",
+        "Mentored freshers across teams, helping them onboard and contribute effectively.",
+        "Received Gold Excellence Award for impactful delivery and leadership."
+      ]
+    },
+    {
+      "company": "Chubb",
+      "role": "Software Developer Intern",
+      "duration": "Aug 2022 – Jun 2023",
+      "logo": "https://logo.clearbit.com/chubb.com",
+      "bullets": [
+        "Helped deliver a quick-turnaround dashboard to replace a broken Qlik dashboard, ensuring business teams restoring essential analytics for business continuity.",
+        "Gained hands-on experience with software development best practices, agile processes, code reviews, and production systems.",
+        "Delivered production-ready features under guidance, actively participating in sprints and releases."
       ]
     },
     {
       "company": "Digi Bros",
       "role": "Full Stack Developer Intern",
       "duration": "Jan 2022 – Mar 2022",
-      "logo": "https://img.logo.dev/google.com?token=pk_BoCjPfbiTCa0GKmNSuKZQw/",
+      "logo": "https://logo.clearbit.com/dailymotion.com",
       "bullets": [
         "Built an invoicing system with inventory management using PHP, JS, MySQL, and Bootstrap.",
         "Integrated High Charts API for dynamic sales and inventory dashboards."
@@ -122,5 +130,12 @@
     "linkedin": "https://www.linkedin.com/in/ruthvik-ch/",
     "github": "https://github.com/ruthvik-ch",
     "portfolio": "https://ruthvik-ch.github.io/portfolio/"
-  }
+  },
+  "icons": {
+    "linkedIn": "assets/images/ss-linkedin-100.png",
+    "github": "assets/images/ss-github-100.png",
+    "email": "assets/images/ss-email-100.png",
+    "pdf": "assets/images/ss-pdf-100.png"
+  },
+  "resume":"assets/resumes/Ruthvik-Ch-SDE.pdf"
 }

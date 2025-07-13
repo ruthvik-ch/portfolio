@@ -8,6 +8,7 @@ import {
   Education,
   Links,
   Contact,
+  Icons,
 } from '../models/portfolio.model';
 
 interface PortfolioData {
@@ -17,6 +18,8 @@ interface PortfolioData {
   projects: Project[];
   links: Links;
   contact: Contact;
+  icons: Icons;
+  resume: string;
 }
 
 @Injectable({
@@ -47,7 +50,15 @@ export class PortfolioDataService {
     return this.getPortfolioData().pipe(map((data) => data.links));
   }
 
+  getIcons(): Observable<Icons> {
+    return this.getPortfolioData().pipe(map((data) => data.icons));
+  }
+
   getContact(): Observable<Contact> {
     return this.getPortfolioData().pipe(map((data) => data.contact));
+  }
+
+  getResume(): Observable<string> {
+    return this.getPortfolioData().pipe(map((data) => data.resume));
   }
 }
