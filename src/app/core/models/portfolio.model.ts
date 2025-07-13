@@ -30,6 +30,7 @@ export interface Links {
   linkedin: string;
   github: string;
   portfolio: string;
+  instagram: string;
 }
 
 export interface Contact {
@@ -45,4 +46,5 @@ export interface Icons {
   portfolio: string;
   pdf: string;
   email: string;
+  instagram: string;
 }

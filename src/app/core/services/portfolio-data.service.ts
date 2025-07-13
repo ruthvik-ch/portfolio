@@ -39,6 +39,9 @@ export class PortfolioDataService {
     return this.getPortfolioData().pipe(map((data) => data.featuredProjects));
   }
 
+  getAllProjects(): Observable<Project[]> {
+    return this.getPortfolioData().pipe(map((data) => data.projects));
+  }
   getWorkExperience(): Observable<WorkExperience[]> {
     return this.getPortfolioData().pipe(map((data) => data.workExperience));
   }

@@ -3,19 +3,28 @@
 :root {
   /* Color Palette */
   /* Base (Light Theme) */
-  --gray-100: #F8F9FA;
-  --gray-200: #E9ECEF;
-  --gray-300: #DEE2E6;
-  --gray-400: #CED4DA;
-  --gray-500: #ADB5BD;
-  --gray-600: #6C757D;
-  --gray-700: #495057;
-  --gray-800: #343A40;
-  --gray-900: #020712;
+  // --gray-100: #f8f9fa;
+  // --gray-200: #e9ecef;
+  // --gray-300: #dee2e6;
+  // --gray-400: #ced4da;
+  // --gray-500: #adb5bd;
+  // --gray-600: #6c757d;
+  // --gray-700: #495057;
+  // --gray-800: #343a40;
+  // --gray-900: #020712;
 
+  --gray-100: #f8f9fa; // Lightest
+  --gray-200: #e3e6ea;
+  --gray-300: #cdd3d9;
+  --gray-400: #b6bdc5;
+  --gray-500: #9ea5af; // Mid
+  --gray-600: #7d858f;
+  --gray-700: #5c646e;
+  --gray-800: #3a434e;
+  --gray-900: #020712; // Darkest
   // Typography
-  --font-body: 'Rubik', sans-serif;
-  --font-heading: 'Pacifico', sans-serif;
+  --font-body: "Rubik", sans-serif;
+  --font-heading: "Pacifico", sans-serif;
 
   // Layout
   --section-padding: 25vw;
@@ -26,26 +35,24 @@
   --rad-mid: 10px;
   --rad-max: 20px;
 
-  // light theme 
+  // light theme
   --bg-color: var(--gray-100);
   --surface-color: var(--gray-200);
   --text-color: var(--gray-700);
   --text-active-color: var(--gray-800);
-  --text-muted-color: var(--gray-500);
+  --text-muted-color: var(--gray-600);
   --border-color: var(--gray-300);
   --bg-color-translucent: rgba(248, 249, 250, 0.8); // Light = #F8F9FA @ 80%
-
 }
 // dark theme
-[data-theme='dark'] {
+[data-theme="dark"] {
   --bg-color: var(--gray-900);
   --surface-color: var(--gray-800);
   --text-color: var(--gray-300);
-  --text-active-color: var(--gray-100);
-  --text-muted-color: var(--gray-500);
+  --text-active-color: var(--gray-200);
+  --text-muted-color: var(--gray-400);
   --border-color: var(--gray-700);
   --bg-color-translucent: rgba(2, 7, 18, 0.8); // Dark = #020712 @ 80%
-
 }
 
 /* 2. Reset & Base */
@@ -55,7 +62,8 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   font-family: var(--font-body);
   font-size: 1rem;
   font-weight: 400;
@@ -87,7 +95,12 @@ html, body {
 }
 
 /* 4. Heading font (replace later) */
-h1, h2 {
+h1,
+h2 {
   font-family: var(--font-heading);
   letter-spacing: 0.8px;
+}
+.page-heading{
+  font-size: 2.4rem;
+  padding: 1rem 0;
 }

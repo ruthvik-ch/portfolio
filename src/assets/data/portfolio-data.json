@@ -75,11 +75,49 @@
       "institution": "Sathupally Vidhyalayam",
       "role": "SSC",
       "duration": "2016 – 2017",
-      "logo": "https://logo.clearbit.com/sathupallyvidhyalayam.in",
+      "logo": "assets/images/ss-r-100.png",
       "bullets": ["GPA: 9.2"]
     }
   ],
   "featuredProjects": [
+    {
+      "title": "App Space",
+      "description": "App Downloader for mobile. Developed and hosted an App Downloader platform.",
+      "image": "assets/images/appstore.jpg",
+      "tags": ["PHP", "SQL", "DBMS", "Bootstrap"]
+    },
+    {
+      "title": "Fire Flixer",
+      "description": "An entertainment Website. Developed and hosted a user friendly, fully functional entertainment website.",
+      "image": "assets/images/appstore.jpg",
+      "tags": ["JavaScript", "TMDB API"]
+    },
+    {
+      "title": "Shoe Mart",
+      "description": "An ecommerce website for shoes. Integrated payment (Razorpay) and shipping (Shiprocket) APIs.",
+      "image": "assets/images/appstore.jpg",
+      "tags": ["RazorPay API", "Shiprocket API", "PHP", "MySQL"]
+    },
+    {
+      "title": "Invoicing Software for DigiBros",
+      "description": "Invoicing and inventory management software with expense tracking.",
+      "image": "assets/images/appstore.jpg",
+      "tags": ["PHP", "MySQL", "Bootstrap"]
+    },
+    {
+      "title": "Chrome Box",
+      "description": "A Chrome Extension for bookmarking and basic productivity tasks.",
+      "image": "assets/images/appstore.jpg",
+      "tags": ["JavaScript"]
+    },
+    {
+      "title": "Black Jack",
+      "description": "Basic interactive card game using JavaScript.",
+      "image": "assets/images/appstore.jpg",
+      "tags": ["HTML", "CSS", "JavaScript"]
+    }
+  ],
+  "projects": [
     {
       "title": "App Space",
       "description": "App Downloader for mobile. Developed and hosted an App Downloader platform.",
@@ -129,15 +167,17 @@
     "location": "Hyderabad, India"
   },
   "links": {
-    "linkedin": "https://www.linkedin.com/in/ruthvik-ch/",
+    "linkedin": "https://www.linkedin.com/in/ruthvik-ch",
     "github": "https://github.com/ruthvik-ch",
-    "portfolio": "https://ruthvik-ch.github.io/portfolio/"
+    "portfolio": "https://ruthvik-ch.github.io/portfolio",
+    "instagram": "https://www.instagram.com/ch_ruthvik"
   },
   "icons": {
     "linkedIn": "assets/images/ss-linkedin-100.png",
     "github": "assets/images/ss-github-100.png",
     "email": "assets/images/ss-email-100.png",
-    "pdf": "assets/images/ss-pdf-100.png"
+    "pdf": "assets/images/ss-pdf-100.png",
+    "instagram": "assets/images/ss-insta-100.png"
   },
   "resume":"assets/resumes/Ruthvik-Ch-SDE.pdf"
 }

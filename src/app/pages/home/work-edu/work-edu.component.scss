@@ -5,12 +5,12 @@
   .tabs {
     display: flex;
     justify-content: center;
-    background-color: var(--gray-800);
+    background-color: var(--surface-color);
     padding: 0.2rem;
     border-radius: 8px;
     border-radius: var(--rad-mid);
     margin: 0 auto 2rem auto;
-    border: 1.4px solid var(--gray-700);
+    border: 1.4px solid var(--border-color);
     overflow: hidden;
     width: 100%;
 
@@ -33,21 +33,21 @@
       text-align: center;
 
       &.active {
-        background-color: var(--gray-900);
-        color: var(--gray-400);
+        background-color: var(--bg-color);
+        color: var(--text-muted-color);
       }
     }
   }
 
   .timeline-outer {
-      border: 1.4px solid var(--gray-700);
+      border: 1.4px solid var(--border-color);
       border-radius: var(--rad-mid);
       padding: 1rem 1rem 1rem 2rem;
     .timeline {
       display: flex;
       flex-direction: column;
       gap: 2.5rem;
-      border-left: 1.4px solid var(--gray-700);
+      border-left: 1.4px solid var(--border-color);
 
       .timeline-item {
         display: flex;
@@ -62,7 +62,7 @@
           border-radius: 50%;
           object-fit: cover;
           background: black;
-          border: 2px solid var(--gray-700);
+          border: 2px solid var(--border-color);
         }
 
         .content {
@@ -74,7 +74,7 @@
           .company {
             font-weight: 600;
             font-size: 1.1rem;
-            color: var(--gray-200);
+            color: var(--text-active-color);
           }
 
           .role {
@@ -88,7 +88,7 @@
 
             li {
               margin-bottom: 0.4rem;
-              color: var(--gray-300);
+              color: var(--text-color);
             }
           }
 
@@ -96,7 +96,7 @@
             display: inline-block;
             margin-top: 0.5rem;
             font-size: 0.75rem;
-            background: var(--gray-700);
+            background: var(--border-color);
             color: white;
             padding: 0.3rem 0.6rem;
             border-radius: 5px;

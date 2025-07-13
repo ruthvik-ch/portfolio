@@ -12,73 +12,70 @@
 
     .view-more {
       font-size: 0.9rem;
-      color: var(--gray-400);
+      color: var(--text-muted-color);
       text-decoration: none;
       transition: color 0.3s;
 
       &:hover {
         text-decoration: underline;
-        color: var(--gray-200);
+        color: var(--text-active-color);
       }
     }
   }
 
-.projects-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.4rem; // Ensures both horizontal and vertical spacing are the same
-  margin-top: 2rem;
-  justify-content: space-between;
+  .projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.4rem; // Ensures both horizontal and vertical spacing are the same
+    margin-top: 2rem;
+    justify-content: space-between;
 
-  .project-card {
-    background: var(--bg-translucent);
-    border: 1px solid var(--gray-700);
-    border-radius: 10px;
-    overflow: hidden;
-    width: 340px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    .project-card {
+      background: var(--bg-translucent);
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      overflow: hidden;
+      width: 340px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
 
-    &:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15); // Dark theme
-    }
-
-    img {
-      width: 100%;
-      height: 180px;
-      object-fit: cover;
-    }
-
-    .info {
-      padding: 1rem;
-
-      h3 {
-        margin: 0 0 0.5rem;
+      &:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15); // Dark theme
       }
 
-      p {
-        font-size: 0.9rem;
-        color: var(--gray-400);
+      img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
       }
 
-      .tags {
-        margin-top: 0.5rem;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.5rem;
+      .info {
+        padding: 1rem;
 
-        span {
-          background: var(--gray-800);
-          padding: 0.2rem 0.6rem;
-          border-radius: 5px;
-          font-size: 0.75rem;
-          color: var(--gray-100);
+        h3 {
+          margin: 0 0 0.5rem;
+        }
+
+        p {
+          font-size: 0.9rem;
+          color: var(--text-muted-color);
+        }
+
+        .tags {
+          margin-top: 0.5rem;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 0.5rem;
+
+          span {
+            background: var(--gray-800);
+            padding: 0.2rem 0.6rem;
+            border-radius: 5px;
+            font-size: 0.75rem;
+            color: var(--gray-100);
+          }
         }
       }
     }
   }
-}
-
-
-
 }

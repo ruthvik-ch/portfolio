@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
+import { WorkEduComponent } from '../home/work-edu/work-edu.component';
 
 @Component({
   selector: 'app-experience',
-  imports: [],
+  imports: [WorkEduComponent],
   templateUrl: './experience.component.html',
-  styleUrl: './experience.component.scss'
+  styleUrl: './experience.component.scss',
 })
-export class ExperienceComponent {
-
-}
+export class ExperienceComponent {}

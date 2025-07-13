@@ -1,1 +1,42 @@
-<p>contact works!</p>
+<div class="layout-container">
+  <h2 class="page-heading">Contact Me.</h2>
+
+  <div class="contact-text">
+    <p>
+      Uh ooh, no boring forms here!
+      <br />
+      Just mail me at rkexp1&#64;gmail.com <br />
+    </p>
+
+    <div class="contact-social">
+      <span class="dm-text">Slide into my DMs : </span>
+      <span class="social-icons">
+        <a
+          *ngIf="links?.instagram"
+          [href]="links.instagram"
+          target="_blank"
+          aria-label="instagram"
+        >
+          <img [src]="icons.instagram" alt="instagram" class="gif-icon" />
+        </a>
+        <a
+          *ngIf="links?.linkedin"
+          [href]="links.linkedin"
+          target="_blank"
+          aria-label="LinkedIn"
+        >
+          <img [src]="icons.linkedIn" alt="LinkedIn" class="gif-icon" />
+        </a>
+        <a
+          *ngIf="contact?.email"
+          [href]="'mailto:' + contact.email"
+          aria-label="Email"
+        >
+          <img [src]="icons.email" alt="LinkedIn" class="gif-icon" />
+        </a>
+    </span>
+    </div>
+
+    <h2 class="cool-text">Let’s cook up something cool. 🚀</h2>
+  </div>
+</div>
