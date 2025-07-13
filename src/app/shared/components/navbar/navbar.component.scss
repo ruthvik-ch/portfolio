@@ -28,6 +28,8 @@
 
       &.active {
         color: var(--text-color); // active: bright white
+        font-weight: 600;
+        font-size: 1rem;
       }
 
       &:hover {
@@ -44,9 +46,7 @@
   .icon-btn {
     background: none;
     border: none;
-    font-size: 1.2rem;
     cursor: pointer;
-    color: var(--text-color);
     img{
       width: 24px;
       height: 24px;
