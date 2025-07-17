@@ -39,23 +39,20 @@ The second paragraph text
 
 
 
-
-## Clone the repo <a name="introduction"></a>
+## How to run <a name="howToRun"></a>
+### Clone the repo 
 git clone <repo-url>
 cd portfolio-website
 
-# Install dependencies
+### Install dependencies
 npm install
 
-# Start local server
+### Start local server
 ng serve
 Now visit 👉 http://localhost:4200/
 
 For Production:
 
-bash
-Copy
-Edit
 ng build --configuration=production
 Build output will be in dist/portfolio-website.
 
