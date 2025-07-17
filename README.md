@@ -18,7 +18,7 @@
 🙌 [Thanks Note](#thanks)
 
 ## How to run <a name="howtorun"></a>
- ### Clone the repo 
+### Clone the repo 
     git clone <repo-url>
     cd portfolio-website
 
@@ -36,31 +36,31 @@
 
 ✅ Pro tip: Use Vercel for instant deploy.
 
-### 🎨 Make It Yours in 3 Steps
+## 🎨 Make It Yours in 3 Steps <a name="makeItYours"></a>
 This portfolio is 100% JSON-powered ⚡. No messy code edits.
 
 Just update one file:
 
-📂 src/assets/data/portfolio-data.json
+    📂 src/assets/data/portfolio-data.json
 
 Update these keys and own the spotlight:
 
-✍ summary → Your killer intro
+    ✍ summary → Your killer intro
 
-🛠 skills → Mention your skills
+    🛠 skills → Mention your skills
 
 For techies : Group into frontend, backend, database, toolsCloud, other
 
-💼 Work Experience & Education → Roles, bullets, and logos
+    💼 Work Experience & Education → Roles, bullets, and logos
 
-🚀 Featured Projects & projects → Add stunning cards with images, tags, and links
+    🚀 Featured Projects & projects → Add stunning cards with images, tags, and links
 
-📬 Contact links, Icons → Email, Socials, Resume
+    📬 Contact links, Icons → Email, Socials, Resume
 
-🔥 Edit → Save → BOOM! Your portfolio updates instantly ready.
+    🔥 Edit → Save → BOOM! Your portfolio updates instantly ready.
 
 
-### Deploy on Vercel:
+### Deploy on Vercel <a name="makeItYours"></a>
 
 Build it:
 
@@ -68,17 +68,17 @@ Build it:
 Upload dist/portfolio-website to Vercel → set as Output Directory
 
 Push to master → Vercel auto-deploys latest changes 🚀
-### 🌳 Branching Strategy
+### 🌳 Branching Strategy <a name="branchingStrategy"></a>
 Base branch: master
 
-Stable releases: rel/<desc> → e.g., rel/first-launch
+    Stable releases: rel/<desc> → e.g., rel/first-launch
 
-Features: feat/<feature> → e.g., feat/contact-form
+    Features: feat/<feature> → e.g., feat/contact-form
 
 ✅ Merge to master after testing → triggers auto-deploy on Vercel
 ✅ Keep it clean, keep it agile
 
-### 🤝 Contribute & Upgrade
+### 🤝 Contribute & Upgrade <a name="contribute"></a>
 
 This template is in evolution mode 🔥
 
@@ -91,7 +91,7 @@ Got ideas? Fork it, hack it, push PRs.
 
 Let’s make something cool together 💡
 
-### 🙌 Thanks Note</summary>
+### 🙌 Thanks Note <a name="thanks"></a>
 Made with ❤️ & 🧠 by Ruthvik. 
 
 Hope this helps you launch your personal brand in style.
@@ -99,6 +99,6 @@ Hope this helps you launch your personal brand in style.
 Drop a ⭐ on the repo if you like it!
 
 
-🚀 Live Demo: [available here](#https://portfolio-git-master-rkexp.vercel.app/)
+🚀 Live Demo: [available here!](#https://portfolio-git-master-rkexp.vercel.app/)
 
 ✅ Angular | ✅ JSON-driven | ✅ Vercel Auto-Deploy
