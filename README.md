@@ -9,9 +9,9 @@
 
 🛠️ [How to Run This App](#howtorun)
 
-🎨 [Make It Yours (Custom Template Guide)](#makeItYours)
+🎨 [Make It Yours (Custom Template Guide)](#makeityours)
 
-🌳 [Branching Strategy](#branchingStrategy)
+🌳 [Branching Strategy](#branchingstrategy)
 
 🤝 [Contribute & Upgrade](#contribute)
 
@@ -36,7 +36,7 @@
 
 ✅ Pro tip: Use Vercel for instant deploy.
 
-## 🎨 Make It Yours in 3 Steps <a name="makeItYours"></a>
+## 🎨 Make It Yours in 3 Steps <a name="makeityours"></a>
 This portfolio is 100% JSON-powered ⚡. No messy code edits.
 
 Just update one file:
@@ -60,7 +60,7 @@ For techies : Group into frontend, backend, database, toolsCloud, other
     🔥 Edit → Save → BOOM! Your portfolio updates instantly ready.
 
 
-### Deploy on Vercel <a name="makeItYours"></a>
+### Deploy on Vercel <a name="deploy"></a>
 
 Build it:
 
@@ -68,7 +68,7 @@ Build it:
 Upload dist/portfolio-website to Vercel → set as Output Directory
 
 Push to master → Vercel auto-deploys latest changes 🚀
-### 🌳 Branching Strategy <a name="branchingStrategy"></a>
+### 🌳 Branching Strategy <a name="branchingstrategy"></a>
 Base branch: master
 
     Stable releases: rel/<desc> → e.g., rel/first-launch
