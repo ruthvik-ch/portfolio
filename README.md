@@ -1,147 +1,116 @@
 # Ruthvik’s Portfolio 🚀
+Built with Angular, this portfolio is where I showcase my work, skills, and ideas in a clean, minimal, and responsive UI.
 
-This is my personal portfolio site — built to showcase my projects, experience, and skills in a clean, minimal, and responsive layout.
+🔥 Not just for me — YOU can make this YOURS too! Edit a single JSON file and launch your personal brand in minutes.
 
-## 🌟 Use This as Your Portfolio Template!
+### 📚 Table of Contents
+✨ About Myself
 
-This project is designed as a fully customizable **Angular + SCSS** based portfolio template.
+🛠️ How to Run This App
 
-### 🔧 How to Use
+🎨 Make It Yours (Custom Template Guide)
 
-All the core content is driven from a single JSON file located at:
+🌳 Branching Strategy
 
+🤝 Contribute & Upgrade
 
-src/assets/data/portfolio-data.json
+🙌 Thanks Note
 
+<details> <summary>### ✨ 1. About Myself</summary>
+Hi, I’m Ruthvik Chennapragada 👋 — Full Stack Developer passionate about building fast, functional, and beautiful web apps.
 
+💡 Live Portfolio: ruthvik-ch.vercel.app
+💼 Tech Stack: Angular • .NET • Azure • SCSS
 
-Update the following keys to personalize it:
+</details>
+<details> <summary>### 🛠️ 2. How to Run This App</summary>
+This is an Angular CLI app, so the usual drill:
 
-- **`summary`** – A short summary about you.
-- **`skills`** – Organize your tech stack into `frontend`, `backend`, `database`, `toolsCloud`, and `other`.
-- **`workExperience` / `education`** – Add your job roles and academics here (each with bullets, logos, etc.).
-- **`featuredProjects` / `projects`** – Add project details with description, tags, and images.
-- **`contact`, `links`, `icons`** – Controls how your social/email/resume info appears.
+bash
+Copy
+Edit
+# Clone the repo
+git clone <repo-url>
+cd portfolio-website
 
-✨ Just edit this file and your portfolio updates instantly!
+# Install dependencies
+npm install
 
----
-
-## 🚀 Deployment on Vercel
-
-This app uses **Angular CSR (Client-Side Rendering)** and is deployed on **[Vercel](https://vercel.com)**.
-
-### How to deploy:
-1. **Build the project** using Angular CLI:
-ng build --configuration=production
-
-
-2. **Deploy the `dist/portfolio-website` folder** on Vercel.
-
-3. Once deployed, **every push to `main`** will **auto-deploy** the latest version!
-
-### Recommended Git Strategy
-
-- Your default branch: `main`
-- For production snapshots:  
-➤ Create release branches like: `rel/first-launch`, `rel/fix-dark-mode`, etc.
-- For new features:  
-➤ Work in feature branches like: `feat/contact-section`, `feat/theme-toggle`, etc.
-
-> ✅ Push to `main` only after verifying features on a separate branch.  
-> 🔄 Vercel will auto-deploy the latest `main`.
-
----
-
-Enjoy building!  
-Want to see it in action? [Check my deployed portfolio](https://ruthvik-ch.vercel.app)
-
----
-Made with ❤️ by [Ruthvik Chennapragada](https://www.linkedin.com/in/ruthvik-ch/)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# PortfolioWebsite
-
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.5.
-
-## Development server
-
-To start a local development server, run:
-
-```bash
+# Start local server
 ng serve
-```
+Now visit 👉 http://localhost:4200/
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+For Production:
 
-## Code scaffolding
+bash
+Copy
+Edit
+ng build --configuration=production
+Build output will be in dist/portfolio-website.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+✅ Pro tip: Use Vercel for instant deploy.
 
-```bash
-ng generate component component-name
-```
+</details>
+<details> <summary>### 🎨 3. Make It Yours</summary>
+This project is fully JSON-driven. Your data lives in:
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+kotlin
+Copy
+Edit
+src/assets/data/portfolio-data.json
+Update these keys:
 
-```bash
-ng generate --help
-```
+summary → Short intro about you
 
-## Building
+skills → Grouped into frontend, backend, database, toolsCloud, other
 
-To build the project run:
+workExperience & education → Roles, bullets, logos
 
-```bash
-ng build
-```
+featuredProjects & projects → Add project cards with image, tags, and links
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+contact, links, icons → Social + resume + mail info
 
-## Running unit tests
+🔥 Edit, save, and BOOM — portfolio updates instantly.
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+Deploy on Vercel:
+Build it:
 
-```bash
-ng test
-```
+bash
+Copy
+Edit
+ng build --configuration=production
+Upload dist/portfolio-website to Vercel → set as Output Directory
 
-## Running end-to-end tests
+Push to main → Vercel auto-deploys latest changes 🚀
 
-For end-to-end (e2e) testing, run:
+</details>
+<details> <summary>### 🌳 4. Branching Strategy</summary>
+Base branch: main
 
-```bash
-ng e2e
-```
+Stable releases: rel/<desc> → e.g., rel/first-launch
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+Features: feat/<feature> → e.g., feat/contact-form
 
-## Additional Resources
+✅ Merge to main after testing → triggers auto-deploy on Vercel
+✅ Keep it clean, keep it agile
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+</details>
+<details> <summary>### 🤝 5. Contribute & Upgrade</summary>
+This template is in evolution mode 🔥
+Got ideas? Fork it, hack it, push PRs.
 
+✅ Add new features
+✅ Improve UI
+✅ Optimize performance
 
+Let’s make something cool together 💡
+
+</details>
+<details> <summary>### 🙌 6. Thanks Note</summary>
+Made with ❤️ & ☕ by Ruthvik Chennapragada
+Hope this helps you launch your personal brand in style.
+Drop a ⭐ on the repo if you like it!
+
+</details>
+🚀 Live Demo: ruthvik-ch.vercel.app
+✅ Angular | ✅ JSON-driven | ✅ Vercel Auto-Deploy
