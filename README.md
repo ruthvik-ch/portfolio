@@ -7,7 +7,7 @@
 
 ### 📚 Table of Contents
 
-🛠️ [How to Run This App](#howToRun)
+🛠️ [How to Run This App](#howtorun)
 
 🎨 [Make It Yours (Custom Template Guide)](#makeItYours)
 
@@ -39,7 +39,8 @@ The second paragraph text
 
 
 
-## How to run <a name="howToRun"></a>
+## How to run <a name="howtorun"></a>
+
 ### Clone the repo 
 git clone <repo-url>
 cd portfolio-website
