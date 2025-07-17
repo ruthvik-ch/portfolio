@@ -17,9 +17,7 @@
 
 🙌 [Thanks Note](#thanks)
 
-<details> <summary> 
 ## How to run <a name="howtorun"></a>
-</summary> </details>
 ### Clone the repo 
 git clone <repo-url>
 cd portfolio-website
@@ -31,61 +29,61 @@ npm install
 ng serve
 Now visit 👉 http://localhost:4200/
 
-For Production:
+### For Production:
 
 ng build --configuration=production
 Build output will be in dist/portfolio-website.
 
 ✅ Pro tip: Use Vercel for instant deploy.
 
-</details>
-<details> <summary>### 🎨 3. Make It Yours</summary>
-This project is fully JSON-driven. Your data lives in:
+### 🎨 Make It Yours in 3 Steps
+This portfolio is 100% JSON-powered ⚡. No messy code edits.
 
-kotlin
-Copy
-Edit
-src/assets/data/portfolio-data.json
-Update these keys:
+Just update one file:
 
-summary → Short intro about you
+📂 src/assets/data/portfolio-data.json
 
-skills → Grouped into frontend, backend, database, toolsCloud, other
+Update these keys and own the spotlight:
 
-workExperience & education → Roles, bullets, logos
+✍ summary → Your killer intro
 
-featuredProjects & projects → Add project cards with image, tags, and links
+🛠 skills → Mention your skills
 
-contact, links, icons → Social + resume + mail info
+For techies : Group into frontend, backend, database, toolsCloud, other
 
-🔥 Edit, save, and BOOM — portfolio updates instantly.
+💼 Work Experience & Education → Roles, bullets, and logos
 
-Deploy on Vercel:
+🚀 Featured Projects & projects → Add stunning cards with images, tags, and links
+
+📬 Contact links, Icons → Email, Socials, Resume
+
+🔥 Edit → Save → BOOM! Your portfolio updates instantly ready.
+
+
+### Deploy on Vercel:
+
 Build it:
 
-bash
-Copy
-Edit
 ng build --configuration=production
 Upload dist/portfolio-website to Vercel → set as Output Directory
 
-Push to main → Vercel auto-deploys latest changes 🚀
-
-</details>
-<details> <summary>### 🌳 4. Branching Strategy</summary>
-Base branch: main
+Push to master → Vercel auto-deploys latest changes 🚀
+### 🌳 Branching Strategy
+Base branch: master
 
 Stable releases: rel/<desc> → e.g., rel/first-launch
 
 Features: feat/<feature> → e.g., feat/contact-form
 
-✅ Merge to main after testing → triggers auto-deploy on Vercel
+✅ Merge to master after testing → triggers auto-deploy on Vercel
 ✅ Keep it clean, keep it agile
 
-</details>
-<details> <summary>### 🤝 5. Contribute & Upgrade</summary>
+### 🤝 Contribute & Upgrade
+
 This template is in evolution mode 🔥
+
 Got ideas? Fork it, hack it, push PRs.
+
 
 ✅ Add new features
 ✅ Improve UI
@@ -93,12 +91,14 @@ Got ideas? Fork it, hack it, push PRs.
 
 Let’s make something cool together 💡
 
-</details>
-<details> <summary>### 🙌 6. Thanks Note</summary>
-Made with ❤️ & ☕ by Ruthvik Chennapragada
+### 🙌 Thanks Note</summary>
+Made with ❤️ & 🧠 by Ruthvik. 
+
 Hope this helps you launch your personal brand in style.
+
 Drop a ⭐ on the repo if you like it!
 
-</details>
-🚀 Live Demo: ruthvik-ch.vercel.app
+
+🚀 Live Demo: [available here](#https://portfolio-git-master-rkexp.vercel.app/)
+
 ✅ Angular | ✅ JSON-driven | ✅ Vercel Auto-Deploy
