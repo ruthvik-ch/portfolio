@@ -1,35 +1,46 @@
-# Ruthvik’s Portfolio 🚀
-Built with Angular, this portfolio is where I showcase my work, skills, and ideas in a clean, minimal, and responsive UI.
+# ShowcaseX 
+⚡ Built with Angular, this portfolio is my playground to showcase projects, skills, and ideas — all in a sleek, responsive design.
 
-🔥 Not just for me — YOU can make this YOURS too! Edit a single JSON file and launch your personal brand in minutes.
+🔥 The best part? It’s not just mine. Make it YOURS in minutes — just tweak one JSON file and boom, your personal brand is live! 🚀
+
+
 
 ### 📚 Table of Contents
-✨ About Myself
 
-🛠️ How to Run This App
+🛠️ [How to Run This App](#howToRun)
 
-🎨 Make It Yours (Custom Template Guide)
+🎨 [Make It Yours (Custom Template Guide)](#makeItYours)
 
-🌳 Branching Strategy
+🌳 [Branching Strategy](#branchingStrategy)
 
-🤝 Contribute & Upgrade
+🤝 [Contribute & Upgrade](#contribute)
 
-🙌 Thanks Note
+🙌 [Thanks Note](#thanks)
 
-<details> <summary>### ✨ 1. About Myself</summary>
-Hi, I’m Ruthvik Chennapragada 👋 — Full Stack Developer passionate about building fast, functional, and beautiful web apps.
 
-💡 Live Portfolio: ruthvik-ch.vercel.app
-💼 Tech Stack: Angular • .NET • Azure • SCSS
+# Table of contents
+1. [Introduction](#introduction)
+2. [Some paragraph](#paragraph1)
+    1. [Sub paragraph](#subparagraph1)
+3. [Another paragraph](#paragraph2)
 
-</details>
-<details> <summary>### 🛠️ 2. How to Run This App</summary>
-This is an Angular CLI app, so the usual drill:
+## This is the introduction <a name="introduction"></a>
+Some introduction text, formatted in heading 2 style
 
-bash
-Copy
-Edit
-# Clone the repo
+## Some paragraph <a name="paragraph1"></a>
+The first paragraph text
+
+### Sub paragraph <a name="subparagraph1"></a>
+This is a sub paragraph, formatted in heading 3 style
+
+## Another paragraph <a name="paragraph2"></a>
+The second paragraph text
+
+
+
+
+
+## Clone the repo <a name="introduction"></a>
 git clone <repo-url>
 cd portfolio-website
 
