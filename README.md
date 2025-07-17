@@ -18,21 +18,21 @@
 🙌 [Thanks Note](#thanks)
 
 ## How to run <a name="howtorun"></a>
-### Clone the repo 
-git clone <repo-url>
-cd portfolio-website
+ ### Clone the repo 
+    git clone <repo-url>
+    cd portfolio-website
 
 ### Install dependencies
-npm install
+    npm install
 
 ### Start local server
-ng serve
-Now visit 👉 http://localhost:4200/
+    ng serve
+ Now visit 👉 http://localhost:4200/
 
 ### For Production:
 
-ng build --configuration=production
-Build output will be in dist/portfolio-website.
+    ng build --configuration=production
+  Build output will be in dist/portfolio-website.
 
 ✅ Pro tip: Use Vercel for instant deploy.
 
@@ -64,7 +64,7 @@ For techies : Group into frontend, backend, database, toolsCloud, other
 
 Build it:
 
-ng build --configuration=production
+    ng build --configuration=production
 Upload dist/portfolio-website to Vercel → set as Output Directory
 
 Push to master → Vercel auto-deploys latest changes 🚀
