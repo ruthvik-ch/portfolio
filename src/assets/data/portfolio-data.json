@@ -16,11 +16,12 @@
       "duration": "Jul 2023 – Present",
       "logo": "https://logo.clearbit.com/chubb.com",
       "bullets": [
-        "Played a pivotal role in delivering an award-winning POC – Claims Watch (SRE WATCH), collaborating across roles to build an intuitive UI and backend integration that enabled real-time insights into application reliability and system performance.",
+        "Played a pivotal role in delivering an award-winning POC – Claims Watch (SRE WATCH), collaborating across roles to build an intuitive UI and backend integration that enabled real-time insights into application reliability and system performance",
         "Led Azure Key Vault migration and addressed critical SonarQube issues to improve code quality and security across services.",
         "Contributed to the upgrade of multiple applications from Azure v1.9 to v2.0, supporting smoother CI/CD transitions and improved deployment workflows.",
         "Developed a self-service tool that enabled business teams to manage key config values independently, reducing deployment cycles and developer overhead.",
         "Implemented bulk upload functionality for use cases like user-roles and relations mapping, allowing business teams to execute large-scale operations efficiently via Excel templates.",
+        "Collaborated closely with leads and product owners across diverse Lines of Business to deliver high-impact results, achieving over 80% Automated Adjuster Assignment across 5 Lines of Business with a remarkable accuracy rate of 98%.",
         "Mentored freshers across teams, helping them onboard and contribute effectively.",
         "Received Gold Excellence Award for impactful delivery and leadership."
       ]
@@ -179,5 +180,5 @@
     "pdf": "assets/images/ss-pdf-100.png",
     "instagram": "assets/images/ss-insta-100.png"
   },
-  "resume":"assets/resumes/Ruthvik-Ch-SDE.pdf"
+  "resume":"assets/resumes/Ruthvik-Ch-SDEv2.pdf"
 }
