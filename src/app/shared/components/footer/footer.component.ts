@@ -15,11 +15,15 @@ export class FooterComponent {
   links!: Links;
   contact!: Contact;
   icons!: Icons;
+  projectReadMeUrl!: string;
 
   constructor(private portfolioService: PortfolioDataService) {}
   ngOnInit(): void {
     this.portfolioService.getIcons().subscribe((data) => (this.icons = data));
     this.portfolioService.getLinks().subscribe((data) => (this.links = data));
+    this.portfolioService
+      .getReadMeUrl()
+      .subscribe((data) => (this.projectReadMeUrl = data));
     this.portfolioService
       .getContact()
       .subscribe((data) => (this.contact = data));

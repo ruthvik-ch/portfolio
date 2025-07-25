@@ -63,21 +63,21 @@
       "role": "B.Tech in Computer Science and Engineering (Networks)",
       "duration": "2019 – 2023",
       "logo": "https://logo.clearbit.com/kitsw.ac.in",
-      "bullets": ["CGPA: 7.47"]
+      "bullets": []
     },
     {
       "institution": "Narayana Junior College",
       "role": "Intermediate – MPC",
       "duration": "2017 – 2019",
       "logo": "https://logo.clearbit.com/narayanagroup.com",
-      "bullets": ["Score: 863/1000"]
+      "bullets": []
     },
     {
       "institution": "Sathupally Vidhyalayam",
       "role": "SSC",
       "duration": "2016 – 2017",
       "logo": "assets/images/ss-r-100.png",
-      "bullets": ["GPA: 9.2"]
+      "bullets": []
     }
   ],
   "featuredProjects": [
@@ -180,5 +180,6 @@
     "pdf": "assets/images/ss-pdf-100.png",
     "instagram": "assets/images/ss-insta-100.png"
   },
-  "resume":"assets/resumes/Ruthvik-Ch-SDEv2.pdf"
+  "resume":"assets/resumes/Ruthvik-Ch-SDEv2.pdf",
+  "projectReadMeUrl":"https://github.com/ruthvik-ch/portfolio/blob/master/README.md"
 }

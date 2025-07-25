@@ -1,59 +1,66 @@
 <footer class="footer layout-container">
-  <div class="footer-left">
-    <span>© {{ currentYear }} | ruthvik-ch </span>
-    <a routerLink="/privacy" class="privacy-link">privacy?</a>
-  </div>
+  <div class="footer-top">
+    <div class="footer-left">
+      <span>© {{ currentYear }} | ruthvik-ch </span>
+      <a routerLink="/privacy" class="privacy-link">privacy?</a>
+    </div>
 
-  <div class="footer-right">
-    <div class="social-icons">
-      <a
-        *ngIf="links?.linkedin"
-        [href]="links.linkedin"
-        target="_blank"
-        aria-label="LinkedIn"
-      >
-        <img [src]="icons.linkedIn" alt="LinkedIn" class="gif-icon" />
-      </a>
-      <a
-        *ngIf="links?.github"
-        [href]="links.github"
-        target="_blank"
-        aria-label="GitHub"
-      >
-        <img [src]="icons.github" alt="Github" class="gif-icon" />
-      </a>
-      <a
-        *ngIf="contact?.email"
-        [href]="'mailto:' + contact.email"
-        aria-label="Email"
-      >
-        <img [src]="icons.email" alt="LinkedIn" class="gif-icon" />
-      </a>
-      <a
-        *ngIf="links?.instagram"
-        [href]="links.instagram"
-        target="_blank"
-        aria-label="instagram"
-      >
-        <img [src]="icons.instagram" alt="instagram" class="gif-icon" />
-      </a>
-
-      <div class="tooltip-wrapper">
+    <div class="footer-right">
+      <div class="social-icons">
         <a
-          class="attribution"
-          *ngIf="links?.instagram"
-          href="https://storyset.com/internet"
+          *ngIf="links?.linkedin"
+          [href]="links.linkedin"
           target="_blank"
-          aria-label="attribution"
+          aria-label="LinkedIn"
         >
-          <img
-            src="assets/images/ss-r-100.png"
-            alt="attribution"
-            class="gif-icon"
-          />
+          <img [src]="icons.linkedIn" alt="LinkedIn" class="gif-icon" />
         </a>
-        <span class="custom-tooltip">Internet illustrations by Storyset</span>
+        <a
+          *ngIf="links?.github"
+          [href]="links.github"
+          target="_blank"
+          aria-label="GitHub"
+        >
+          <img [src]="icons.github" alt="Github" class="gif-icon" />
+        </a>
+        <a
+          *ngIf="contact?.email"
+          [href]="'mailto:' + contact.email"
+          aria-label="Email"
+        >
+          <img [src]="icons.email" alt="LinkedIn" class="gif-icon" />
+        </a>
+        <a
+          *ngIf="links?.instagram"
+          [href]="links.instagram"
+          target="_blank"
+          aria-label="instagram"
+        >
+          <img [src]="icons.instagram" alt="instagram" class="gif-icon" />
+        </a>
+
+        <div class="tooltip-wrapper">
+          <a
+            class="attribution"
+            *ngIf="links?.instagram"
+            href="https://storyset.com/internet"
+            target="_blank"
+            aria-label="attribution"
+          >
+            <img
+              src="assets/images/ss-r-100.png"
+              alt="attribution"
+              class="gif-icon"
+            />
+          </a>
+          <span class="custom-tooltip">Internet illustrations by Storyset</span>
+        </div>
       </div>
     </div>
   </div>
+  <div class="footer-bottom">
+  <a [href]="projectReadMeUrl" target="_blank" rel="noopener noreferrer">
+    🎉 Love what you see? Steal this vibe & launch YOUR portfolio in minutes! ⚡
+  </a>
+</div>
 </footer>

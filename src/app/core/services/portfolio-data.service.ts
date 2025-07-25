@@ -21,6 +21,7 @@ interface PortfolioData {
   icons: Icons;
   resume: string;
   summary: string;
+  projectReadMeUrl: string;
 }
 
 @Injectable({
@@ -82,5 +83,9 @@ export class PortfolioDataService {
 
   getSummary(): Observable<string> {
     return this.getPortfolioData().pipe(map((data) => data.summary));
+  }
+
+  getReadMeUrl(): Observable<string> {
+    return this.getPortfolioData().pipe(map((data) => data.projectReadMeUrl));
   }
 }
