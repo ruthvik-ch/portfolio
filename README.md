@@ -99,6 +99,6 @@ Hope this helps you launch your personal brand in style.
 Drop a ⭐ on the repo if you like it!
 
 
-🚀 Live Demo: [available here!](#https://portfolio-git-master-rkexp.vercel.app/)
+🚀 Live Demo: [available here!](https://ruthvik-ch.netlify.app)
 
-✅ Angular | ✅ JSON-driven | ✅ Vercel Auto-Deploy
+✅ Angular | ✅ JSON-driven | ✅ Auto-Deploy on Vercel & Netlify
