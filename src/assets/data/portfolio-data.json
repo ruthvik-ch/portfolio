@@ -4,7 +4,7 @@
   "summary": "Full Stack Developer with expertise in Angular, .NET, Spring Boot and Azure. Known for delivering scalable enterprise-grade solutions and leading migrations under tight deadlines.",
   "skills": {
     "frontend": ["Angular", "TypeScript", "HTML5", "CSS3", "Bootstrap"],
-    "backend": ["ASP.NET Core", "C#"],
+    "backend": ["ASP.NET", "Spring Boot"],
     "database": ["SQL Server (SSMS)", "MySQL"],
     "toolsCloud": ["Azure DevOps", "Git", "SonarQube", "Azure Key Vault"],
     "other": ["REST APIs", "Agile Methodology", "Team Leadership", "Mentoring"]
@@ -18,7 +18,7 @@
       "bullets": [
         "Played a pivotal role in delivering an award-winning POC – Claims Watch (SRE WATCH), collaborating across roles to build an intuitive UI and backend integration that enabled real-time insights into application reliability and system performance",
         "Led Azure Key Vault migration and addressed critical SonarQube issues to improve code quality and security across services.",
-        "Contributed to the upgrade of multiple applications from Azure v1.9 to v2.0, supporting smoother CI/CD transitions and improved deployment workflows.",
+        "Contributed to the upgrade of multiple applications from Legacy Azure App services to latest version Improving performance, security, scalability, supporting smoother CI/CD transitions and improved deployment workflows.",
         "Developed a self-service tool that enabled business teams to manage key config values independently, reducing deployment cycles and developer overhead.",
         "Implemented bulk upload functionality for use cases like user-roles and relations mapping, allowing business teams to execute large-scale operations efficiently via Excel templates.",
         "Collaborated closely with leads and product owners across diverse Lines of Business to deliver high-impact results, achieving over 80% Automated Adjuster Assignment across 5 Lines of Business with a remarkable accuracy rate of 98%.",
