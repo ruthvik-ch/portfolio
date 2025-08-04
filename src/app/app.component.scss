@@ -1,0 +1,17 @@
+.content-wrapper {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  transform: translateY(10px);
+}
+
+.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+  user-select: none;
+}

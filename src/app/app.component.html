@@ -1,5 +1,14 @@
-<app-navbar></app-navbar>
+<!-- <app-navbar></app-navbar>
 
 <router-outlet></router-outlet>
 
-<app-footer></app-footer>
+<app-footer></app-footer> -->
+
+<app-loader *ngIf="isLoading"></app-loader>
+
+<app-navbar class="content-wrapper" [class.hidden]="isLoading" [class.fade-in]="!isLoading"></app-navbar>
+
+<div class="content-wrapper" [class.hidden]="isLoading" [class.fade-in]="!isLoading">
+  <router-outlet></router-outlet>
+</div>
+<app-footer class="content-wrapper" [class.hidden]="isLoading" [class.fade-in]="!isLoading"></app-footer>
