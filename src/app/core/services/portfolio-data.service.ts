@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { catchError, map, Observable, of } from 'rxjs';
+import { catchError, map, Observable, of, shareReplay } from 'rxjs';
 
 import {
   PortfolioData,
@@ -17,29 +17,25 @@ import {
 })
 export class PortfolioDataService {
   private dataUrl = 'assets/data/portfolio-data.json';
-  private cachedData?: PortfolioData;
+  private cachedPortfolioData$?: Observable<PortfolioData>;
+
   constructor(private http: HttpClient) {}
 
   getPortfolioData(): Observable<PortfolioData> {
-    try {
-      if (this.cachedData) {
-        // If cached, return as observable
-        return new Observable((observer) => {
-          observer.next(this.cachedData!);
-          observer.complete();
-        });
-      }
-
-      // Else fetch from file and cache it
-      return this.http.get<PortfolioData>(this.dataUrl).pipe(
-        map((data) => {
-          this.cachedData = data;
-          return data;
-        })
-      );
-    } catch (error) {
-      return this.getDefaultData();
+    if (!this.cachedPortfolioData$) {
+      this.cachedPortfolioData$ = this.loadPortfolioData();
     }
+    return this.cachedPortfolioData$;
+  }
+
+  private loadPortfolioData(): Observable<PortfolioData> {
+    return this.http.get<PortfolioData>(this.dataUrl).pipe(
+      catchError((error) => {
+        console.error('Failed to load portfolio data:', error);
+        return this.getDefaultData();
+      }),
+      shareReplay(1) // Caches the latest emitted value and shares it
+    );
   }
 
   getDefaultData() {
