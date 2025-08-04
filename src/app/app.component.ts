@@ -25,6 +25,6 @@ export class App {
   ngOnInit() {
     setTimeout(() => {
       this.isLoading = false;
-    }, 0);
+    }, 60);
   }
 }
