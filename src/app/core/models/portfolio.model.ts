@@ -1,3 +1,17 @@
+export interface PortfolioData {
+  featuredProjects: Project[];
+  workExperience: WorkExperience[];
+  education: Education[];
+  projects: Project[];
+  links: Links;
+  contact: Contact;
+  icons: Icons;
+  resume: string;
+  summary: string;
+  projectReadMeUrl: string;
+  heroImageUrl: string;
+}
+
 export interface Link {
   url: string;
   label: string;

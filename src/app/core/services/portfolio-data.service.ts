@@ -1,8 +1,9 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { map, Observable } from 'rxjs';
+import { catchError, map, Observable, of } from 'rxjs';
 
 import {
+  PortfolioData,
   Project,
   WorkExperience,
   Education,
@@ -10,19 +11,6 @@ import {
   Contact,
   Icons,
 } from '../models/portfolio.model';
-
-interface PortfolioData {
-  featuredProjects: Project[];
-  workExperience: WorkExperience[];
-  education: Education[];
-  projects: Project[];
-  links: Links;
-  contact: Contact;
-  icons: Icons;
-  resume: string;
-  summary: string;
-  projectReadMeUrl: string;
-}
 
 @Injectable({
   providedIn: 'root',
@@ -33,21 +21,42 @@ export class PortfolioDataService {
   constructor(private http: HttpClient) {}
 
   getPortfolioData(): Observable<PortfolioData> {
-    if (this.cachedData) {
-      // If cached, return as observable
-      return new Observable((observer) => {
-        observer.next(this.cachedData!);
-        observer.complete();
-      });
-    }
+    try {
+      if (this.cachedData) {
+        // If cached, return as observable
+        return new Observable((observer) => {
+          observer.next(this.cachedData!);
+          observer.complete();
+        });
+      }
 
-    // Else fetch from file and cache it
-    return this.http.get<PortfolioData>(this.dataUrl).pipe(
-      map((data) => {
-        this.cachedData = data;
-        return data;
-      })
-    );
+      // Else fetch from file and cache it
+      return this.http.get<PortfolioData>(this.dataUrl).pipe(
+        map((data) => {
+          this.cachedData = data;
+          return data;
+        })
+      );
+    } catch (error) {
+      return this.getDefaultData();
+    }
+  }
+
+  getDefaultData() {
+    // Return a default PortfolioData object with Ruthvik's details as appropriate
+    return of({
+      featuredProjects: [],
+      workExperience: [],
+      education: [],
+      projects: [],
+      links: {} as Links,
+      contact: {} as Contact,
+      icons: {} as Icons,
+      resume: '',
+      summary: '',
+      projectReadMeUrl: '',
+      heroImageUrl: '',
+    });
   }
 
   getFeaturedProjects(): Observable<Project[]> {
@@ -87,5 +96,9 @@ export class PortfolioDataService {
 
   getReadMeUrl(): Observable<string> {
     return this.getPortfolioData().pipe(map((data) => data.projectReadMeUrl));
+  }
+
+  getHeroImageUrl(): Observable<string> {
+    return this.getPortfolioData().pipe(map((data) => data.heroImageUrl));
   }
 }

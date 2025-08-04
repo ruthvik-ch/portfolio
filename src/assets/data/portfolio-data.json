@@ -1,6 +1,6 @@
 {
   "summaryLarge": "Full Stack Developer with 2.5+ years of experience in Angular, .NET, Spring Boot and Azure. Skilled at navigating complex challenges, leading migrations, mentoring freshers, and delivering reliable, efficient solutions under tight timelines.",
-
+  "heroImageUrl": "assets/images/rktemp.webp",
   "summary": "Full Stack Developer with expertise in Angular, .NET, Spring Boot and Azure. Known for delivering scalable enterprise-grade solutions and leading migrations under tight deadlines.",
   "skills": {
     "frontend": ["Angular", "TypeScript", "HTML5", "CSS3", "Bootstrap"],
@@ -76,7 +76,7 @@
       "institution": "Sathupally Vidhyalayam",
       "role": "SSC",
       "duration": "2016 – 2017",
-      "logo": "assets/images/ss-r-100.png",
+      "logo": "assets/images/ss-r-100.webp",
       "bullets": []
     }
   ],
@@ -84,37 +84,37 @@
     {
       "title": "App Space",
       "description": "App Downloader for mobile. Developed and hosted an App Downloader platform.",
-      "image": "assets/images/appstore.jpg",
+      "image": "assets/images/appstore.webp",
       "tags": ["PHP", "SQL", "DBMS", "Bootstrap"]
     },
     {
       "title": "Fire Flixer",
       "description": "An entertainment Website. Developed and hosted a user friendly, fully functional entertainment website.",
-      "image": "assets/images/appstore.jpg",
+      "image": "assets/images/appstore.webp",
       "tags": ["JavaScript", "TMDB API"]
     },
     {
       "title": "Shoe Mart",
       "description": "An ecommerce website for shoes. Integrated payment (Razorpay) and shipping (Shiprocket) APIs.",
-      "image": "assets/images/appstore.jpg",
+      "image": "assets/images/appstore.webp",
       "tags": ["RazorPay API", "Shiprocket API", "PHP", "MySQL"]
     },
     {
       "title": "Invoicing Software for DigiBros",
       "description": "Invoicing and inventory management software with expense tracking.",
-      "image": "assets/images/appstore.jpg",
+      "image": "assets/images/appstore.webp",
       "tags": ["PHP", "MySQL", "Bootstrap"]
     },
     {
       "title": "Chrome Box",
       "description": "A Chrome Extension for bookmarking and basic productivity tasks.",
-      "image": "assets/images/appstore.jpg",
+      "image": "assets/images/appstore.webp",
       "tags": ["JavaScript"]
     },
     {
       "title": "Black Jack",
       "description": "Basic interactive card game using JavaScript.",
-      "image": "assets/images/appstore.jpg",
+      "image": "assets/images/appstore.webp",
       "tags": ["HTML", "CSS", "JavaScript"]
     }
   ],
@@ -122,37 +122,37 @@
     {
       "title": "App Space",
       "description": "App Downloader for mobile. Developed and hosted an App Downloader platform.",
-      "image": "assets/images/appstore.jpg",
+      "image": "assets/images/appstore.webp",
       "tags": ["PHP", "SQL", "DBMS", "Bootstrap"]
     },
     {
       "title": "Fire Flixer",
       "description": "An entertainment Website. Developed and hosted a user friendly, fully functional entertainment website.",
-      "image": "assets/images/appstore.jpg",
+      "image": "assets/images/appstore.webp",
       "tags": ["JavaScript", "TMDB API"]
     },
     {
       "title": "Shoe Mart",
       "description": "An ecommerce website for shoes. Integrated payment (Razorpay) and shipping (Shiprocket) APIs.",
-      "image": "assets/images/appstore.jpg",
+      "image": "assets/images/appstore.webp",
       "tags": ["RazorPay API", "Shiprocket API", "PHP", "MySQL"]
     },
     {
       "title": "Invoicing Software for DigiBros",
       "description": "Invoicing and inventory management software with expense tracking.",
-      "image": "assets/images/appstore.jpg",
+      "image": "assets/images/appstore.webp",
       "tags": ["PHP", "MySQL", "Bootstrap"]
     },
     {
       "title": "Chrome Box",
       "description": "A Chrome Extension for bookmarking and basic productivity tasks.",
-      "image": "assets/images/appstore.jpg",
+      "image": "assets/images/appstore.webp",
       "tags": ["JavaScript"]
     },
     {
       "title": "Black Jack",
       "description": "Basic interactive card game using JavaScript.",
-      "image": "assets/images/appstore.jpg",
+      "image": "assets/images/appstore.webp",
       "tags": ["HTML", "CSS", "JavaScript"]
     }
   ],
@@ -174,11 +174,11 @@
     "instagram": "https://www.instagram.com/ch_ruthvik"
   },
   "icons": {
-    "linkedIn": "assets/images/ss-linkedin-100.png",
-    "github": "assets/images/ss-github-100.png",
-    "email": "assets/images/ss-email-100.png",
-    "pdf": "assets/images/ss-pdf-100.png",
-    "instagram": "assets/images/ss-insta-100.png"
+    "linkedIn": "assets/images/ss-linkedin-100.webp",
+    "github": "assets/images/ss-github-100.webp",
+    "email": "assets/images/ss-email-100.webp",
+    "pdf": "assets/images/ss-pdf-100.webp",
+    "instagram": "assets/images/ss-insta-100.webp"
   },
   "resume":"assets/resumes/Ruthvik-Ch-SDE.pdf",
   "projectReadMeUrl":"https://github.com/ruthvik-ch/portfolio/blob/master/README.md"

@@ -24,6 +24,7 @@ export class HomeComponent implements OnDestroy, OnInit {
   icons!: Icons;
   resumeLink!: string;
   summary!: string;
+  heroImageUrl!: string;
 
   constructor(
     private timeService: TimeService,
@@ -45,6 +46,9 @@ export class HomeComponent implements OnDestroy, OnInit {
     this.portfolioService
       .getContact()
       .subscribe((data) => (this.contact = data));
+    this.portfolioService
+      .getHeroImageUrl()
+      .subscribe((data) => (this.heroImageUrl = data));
   }
 
   onHoverStart() {
