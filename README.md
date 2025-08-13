@@ -93,7 +93,7 @@ Got ideas? Fork it, hack it, push PRs.
 Let’s make something cool 💡
 
 ### 🙌 Thanks Note <a name="thanks"></a>
-Made with 🧠 & ❤️ by Ruthvik. 
+Made with 🧠 & ❤️ by <em>Ruthvik</em>. 
 
 Hope this helps you launch your personal brand in style.
 
@@ -103,3 +103,10 @@ Drop a ⭐ on the repo if you like it!
 🚀 Live Demo: [available here!](https://ruthvik-ch.netlify.app)
 
 ✅ Angular | ✅ JSON-driven | ✅ Auto-Deploy on Vercel & Netlify
+
+---
+
+
+<p align="center">
+  <em> Ruthvik </em>
+</p>
