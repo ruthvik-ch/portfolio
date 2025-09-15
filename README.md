@@ -1,8 +1,7 @@
 # ShowcaseX 
-⚡ Built with Angular, this portfolio is my playground to showcase projects, skills, and ideas — all in a sleek, responsive design.
+⚡ Built with Angular, this portfolio is gonna be playground to showcase projects, skills, and ideas — all in a sleek, responsive design.
 
 🔥 The best part? It’s not just mine. Make it YOURS in minutes — just tweak one JSON file and boom, your personal brand is live! 🚀
-
 
 
 ### 📚 Table of Contents
@@ -19,7 +18,7 @@
 
 ## How to run <a name="howtorun"></a>
 ### Clone the repo 
-    git clone <repo-url>
+    git clone https://github.com/ruthvik-ch/portfolio.git
     cd portfolio-website
 
 ### Install dependencies
@@ -34,7 +33,7 @@
     ng build --configuration=production
   Build output will be in dist/portfolio-website.
 
-✅ Pro tip: Use Vercel for instant deploy.
+✅ Pro tip: Use Netlify/Vercel for instant deployments.
 
 ## 🎨 Make It Yours in 3 Steps <a name="makeityours"></a>
 This portfolio is 100% JSON-powered ⚡. No messy code edits.
@@ -82,6 +81,8 @@ Base branch: master
 
 This template is in evolution mode 🔥
 
+The goal is to make it feature rich & effortless for anyone who wants to getsomething live quickly.
+
 Got ideas? Fork it, hack it, push PRs.
 
 
@@ -89,10 +90,10 @@ Got ideas? Fork it, hack it, push PRs.
 ✅ Improve UI
 ✅ Optimize performance
 
-Let’s make something cool together 💡
+Let’s make something cool 💡
 
 ### 🙌 Thanks Note <a name="thanks"></a>
-Made with ❤️ & 🧠 by Ruthvik. 
+Made with 🧠 & ❤️ by <em>Ruthvik</em>. 
 
 Hope this helps you launch your personal brand in style.
 
@@ -102,3 +103,10 @@ Drop a ⭐ on the repo if you like it!
 🚀 Live Demo: [available here!](https://ruthvik-ch.netlify.app)
 
 ✅ Angular | ✅ JSON-driven | ✅ Auto-Deploy on Vercel & Netlify
+
+---
+
+
+<p align="center">
+  <em> Ruthvik </em>
+</p>
