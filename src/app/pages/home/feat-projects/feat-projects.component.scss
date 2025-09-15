@@ -10,21 +10,26 @@
       font-size: 1.8rem;
     }
 
-    .view-more {
-      font-size: 0.9rem;
-      color: var(--text-muted-color);
-      text-decoration: none;
-      transition: color 0.3s;
+      .view-more {
+        font-size: 0.9rem;
+        font-weight: 300;
+        color: var(--text-muted-color);
+        text-decoration: none;
+        transition: color 0.3s;
 
-      &:hover {
-        text-decoration: underline;
-        color: var(--text-active-color);
+        &:hover {
+          font-weight: 500;
+          padding-bottom: 2px;
+          border-bottom: 2px solid var(--text-active-color);
+          color: var(--text-active-color);
+          transition: 0.3s;
+        }
       }
-    }
   }
 
   .projects-grid {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     gap: 1.4rem; // Ensures both horizontal and vertical spacing are the same
     margin-top: 2rem;
@@ -35,7 +40,7 @@
       border: 1px solid var(--border-color);
       border-radius: 10px;
       overflow: hidden;
-      width: 340px;
+      // width: 340px;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
 
       &:hover {
@@ -100,7 +105,8 @@
         transition: color 0.3s;
 
         &:hover {
-          text-decoration: underline;
+          padding-bottom: 2px;
+          border-bottom: 2px ;
           color: var(--text-active-color);
         }
       }

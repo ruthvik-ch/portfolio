@@ -53,7 +53,7 @@
       "duration": "Apr 2021 – May 2021",
       "logo": "https://logo.clearbit.com/utest.com",
       "bullets": [
-        "Executed test cases on early-access platforms, submitted structured bug reports."
+        "Assessed pre-release (early-access) applications, identified issues, and submitted structured bug reports to enhance product quality before public launch"
       ]
     }
   ],
@@ -82,40 +82,22 @@
   ],
   "featuredProjects": [
     {
-      "title": "App Space",
-      "description": "App Downloader for mobile. Developed and hosted an App Downloader platform.",
+      "title": "Invoicing Software for DigiBros",
+      "description": "Developed invoicing and inventory management software for a jewelry business with role-based access. Features included product CRUD, real-time stock tracking, QR code tagging for quick checkouts, and user subscription schemes offering monthly payments with rewards.",
       "image": "assets/images/appstore.webp",
-      "tags": ["PHP", "SQL", "DBMS", "Bootstrap"]
-    },
-    {
-      "title": "Fire Flixer",
-      "description": "An entertainment Website. Developed and hosted a user friendly, fully functional entertainment website.",
-      "image": "assets/images/appstore.webp",
-      "tags": ["JavaScript", "TMDB API"]
+      "tags": ["Angular", "Express Js", "Mongo DB"]
     },
     {
       "title": "Shoe Mart",
-      "description": "An ecommerce website for shoes. Integrated payment (Razorpay) and shipping (Shiprocket) APIs.",
+      "description": "Developed a full-stack e-commerce website for shoe sales. Features included product catalog, discounts, user account management, rbac and inventory tracking. Integrated Razorpay APIs for secure payments and Shiprocket APIs for delivery management.",
       "image": "assets/images/appstore.webp",
       "tags": ["RazorPay API", "Shiprocket API", "PHP", "MySQL"]
-    },
-    {
-      "title": "Invoicing Software for DigiBros",
-      "description": "Invoicing and inventory management software with expense tracking.",
-      "image": "assets/images/appstore.webp",
-      "tags": ["PHP", "MySQL", "Bootstrap"]
     },
     {
       "title": "Chrome Box",
       "description": "A Chrome Extension for bookmarking and basic productivity tasks.",
       "image": "assets/images/appstore.webp",
       "tags": ["JavaScript"]
-    },
-    {
-      "title": "Black Jack",
-      "description": "Basic interactive card game using JavaScript.",
-      "image": "assets/images/appstore.webp",
-      "tags": ["HTML", "CSS", "JavaScript"]
     }
   ],
   "projects": [

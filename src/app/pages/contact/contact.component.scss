@@ -5,6 +5,19 @@
 
   .contact-right {
     flex: 2;
+    .email{
+      text-decoration: none;
+      color: var(--text-muted-color);
+      &:hover {
+        font-size: 1rem;
+          font-weight: 500;
+          // padding-bottom: 2px;
+          border-bottom: 2px solid var(--text-active-color);
+          color: var(--text-active-color);
+          transition: 0.3s;
+      }
+    }
+    
     .contact-social {
       display: flex;
       align-items: center;
@@ -26,7 +39,7 @@
           transition: color 0.3s ease;
 
           &:hover {
-            color: var(--text-color);
+            color: var(--text-active-color);
           }
 
           img.gif-icon {

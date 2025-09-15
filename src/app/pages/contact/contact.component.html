@@ -1318,7 +1318,17 @@
       <p>
         Uh ooh, no boring forms here!
         <br />
-        Just mail me at rkexp1&#64;gmail.com or Slide into my DMs<br />
+        Just mail me at 
+        <a class="email"
+            *ngIf="contact?.email"
+            [href]="contact.email"
+            target="_blank"
+            aria-label="instagram"
+          >
+        {{contact.email}}
+        </a>
+        
+        or Slide into my DMs<br />
       </p>
       <br />
 
