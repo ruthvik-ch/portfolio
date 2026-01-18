@@ -82,6 +82,19 @@
   ],
   "featuredProjects": [
     {
+      "title": "Expense Tracker - Notion",
+      "description": "A lightweight Flask app that lets you add expenses to a Notion database using natural language. It uses OpenAI to extract structured expense data and stores it via the Notion API.",
+      "image": "assets/images/appstore.webp",
+      "tags": ["Open AI", "Notion DB, API", "Flask", "Python"],
+      "link": "https://notion-expense-tracker.onrender.com"
+    },
+    {
+      "title": "Portfolio page",
+      "description": "An open-source, zero-code portfolio builder that lets anyone launch a professional personal website by updating a single JSON file.",
+      "image": "assets/images/appstore.webp",
+      "tags": ["Angular", "JSON Based"]
+    },
+    {
       "title": "Invoicing Software for DigiBros",
       "description": "Developed invoicing and inventory management software for a jewelry business with role-based access. Features included product CRUD, real-time stock tracking, QR code tagging for quick checkouts, and user subscription schemes offering monthly payments with rewards.",
       "image": "assets/images/appstore.webp",
@@ -92,26 +105,21 @@
       "description": "Developed a full-stack e-commerce website for shoe sales. Features included product catalog, discounts, user account management, rbac and inventory tracking. Integrated Razorpay APIs for secure payments and Shiprocket APIs for delivery management.",
       "image": "assets/images/appstore.webp",
       "tags": ["RazorPay API", "Shiprocket API", "PHP", "MySQL"]
-    },
-    {
-      "title": "Chrome Box",
-      "description": "A Chrome Extension for bookmarking and basic productivity tasks.",
-      "image": "assets/images/appstore.webp",
-      "tags": ["JavaScript"]
     }
   ],
   "projects": [
     {
-      "title": "App Space",
-      "description": "App Downloader for mobile. Developed and hosted an App Downloader platform.",
+      "title": "Expense Tracker - Notion",
+      "description": "A lightweight Flask app that lets you add expenses to a Notion database using natural language. It uses OpenAI to extract structured expense data and stores it via the Notion API.",
       "image": "assets/images/appstore.webp",
-      "tags": ["PHP", "SQL", "DBMS", "Bootstrap"]
+      "tags": ["Open AI", "Notion DB, API", "Flask", "Python"],
+      "link": "https://notion-expense-tracker.onrender.com"
     },
     {
-      "title": "Fire Flixer",
-      "description": "An entertainment Website. Developed and hosted a user friendly, fully functional entertainment website.",
+      "title": "Portfolio page",
+      "description": "An open-source, zero-code portfolio builder that lets anyone launch a professional personal website by updating a single JSON file.",
       "image": "assets/images/appstore.webp",
-      "tags": ["JavaScript", "TMDB API"]
+      "tags": ["Angular", "JSON Based"]
     },
     {
       "title": "Shoe Mart",
@@ -126,10 +134,22 @@
       "tags": ["PHP", "MySQL", "Bootstrap"]
     },
     {
-      "title": "Chrome Box",
+      "title": "Chrome Box - Extension",
       "description": "A Chrome Extension for bookmarking and basic productivity tasks.",
       "image": "assets/images/appstore.webp",
       "tags": ["JavaScript"]
+    },
+    {
+      "title": "Fire Flixer",
+      "description": "An entertainment Website. Developed and hosted a user friendly, fully functional entertainment website.",
+      "image": "assets/images/appstore.webp",
+      "tags": ["JavaScript", "TMDB API"]
+    },
+    {
+      "title": "App Space",
+      "description": "App Downloader for mobile. Developed and hosted an App Downloader platform.",
+      "image": "assets/images/appstore.webp",
+      "tags": ["PHP", "SQL", "DBMS", "Bootstrap"]
     },
     {
       "title": "Black Jack",
@@ -162,6 +182,6 @@
     "pdf": "assets/images/ss-pdf-100.webp",
     "instagram": "assets/images/ss-insta-100.webp"
   },
-  "resume":"assets/resumes/Ruthvik-Ch-SDE.pdf",
-  "projectReadMeUrl":"https://github.com/ruthvik-ch/portfolio/blob/master/README.md"
+  "resume": "assets/resumes/Ruthvik-Ch-SDE.pdf",
+  "projectReadMeUrl": "https://github.com/ruthvik-ch/portfolio/blob/master/README.md"
 }

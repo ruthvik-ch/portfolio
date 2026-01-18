@@ -39,6 +39,7 @@ export interface Project {
   description: string;
   image: string;
   tags: string[];
+  link?: Link;
 }
 export interface Links {
   linkedin: string;
