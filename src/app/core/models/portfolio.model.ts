@@ -40,6 +40,7 @@ export interface Project {
   image: string;
   tags: string[];
   link?: Link;
+  url?: string;
 }
 export interface Links {
   linkedin: string;
