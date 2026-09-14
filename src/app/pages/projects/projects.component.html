@@ -6,7 +6,7 @@
       <div class="project-card" *ngFor="let project of projects">
         <img [src]="project.image" [alt]="project.title" />
         <div class="info">
-          <a [href]="project.url" target="_blank" class="project-title-link">
+          <a [href]="project.link" target="_blank" class="project-title-link">
             <h3>{{ project.title }} →</h3>
           </a>
           <p>{{ project.description }}</p>

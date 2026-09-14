@@ -8,7 +8,7 @@ import { LostComponent } from './pages/lost/lost.component';
 export const appRoutes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'projects', component: ProjectsComponent },
-  { path: 'experiences', component: ExperienceComponent },
+  { path: 'experience', component: ExperienceComponent },
   { path: 'contact', component: ContactComponent },
   { path: '**', component: LostComponent },
 ];

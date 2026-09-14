@@ -11,9 +11,18 @@
   },
   "workExperience": [
     {
+      "company": "Barclays",
+      "role": "Software Developer",
+      "duration": "Dec 2025 – Present",
+      "logo": "https://logo.clearbit.com/barclays.com",
+      "bullets": [
+        "Brewing things here. Will be added soon."
+      ]
+    },
+    {
       "company": "Chubb",
       "role": "Software Developer",
-      "duration": "Jul 2023 – Present",
+      "duration": "Jul 2023 – Nov 2025",
       "logo": "https://logo.clearbit.com/chubb.com",
       "bullets": [
         "Played a pivotal role in delivering an award-winning POC – Claims Watch (SRE WATCH), collaborating across roles to build an intuitive UI and backend integration that enabled real-time insights into application reliability and system performance",
